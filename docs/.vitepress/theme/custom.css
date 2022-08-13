@@ -1,16 +1,16 @@
 :root {
-  --vp-c-brand        : #7828C8;
-  --vp-c-green        : #7828C8;
-  --vp-c-green-light  : #571D91;
-  --vp-c-green-lighter: #571D91;
-  --vp-c-green-dark   : #571D91;
-  --vp-c-green-darker : #571D91;
+  --vp-c-brand        :  #d400e7;
+  --vp-c-green        : #d400e7;
+  --vp-c-green-light  : #d400e721;
+  --vp-c-green-lighter: #d400e721;
+  --vp-c-green-dark   : #d400e765;
+  --vp-c-green-darker : #d400e765;
 }
 
 .dark {
-  --vp-c-bg         : #000;
+  --vp-c-bg         : #242424;
   --vp-code-block-bg: #111;
-  --vp-c-bg-alt     : rgba(0, 0, 0, 0.5)
+  --vp-c-bg-alt     : #242424;
 }
 
 
