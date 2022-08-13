@@ -14,7 +14,7 @@ module.exports = {
     sidebar: {
       '/guide/': sidebarGuide(),
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/tobe-fe-dalao/simon-js-tool' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Simon-He95/simon-js-tool' }],
     editLink: {
       pattern: 'https://github.com/Simon-He95/simon-js-tool',
       text: '在GitHub编辑此页',
