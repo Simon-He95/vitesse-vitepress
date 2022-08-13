@@ -9,13 +9,13 @@
 
 <p align="center">
 <br>
-<a href="vitepress.hejian.club/">🖥 Online Preview</a>
+<a href="http://vitepress.hejian.club/">🖥 Online Preview</a>
 
 ## Try it now!
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/Simon-He95/vitesse-next/generate).
+[Create a repo from this template on GitHub](https://github.com/Simon-He95/vitesse-vitepress/generate).
 
 ### Clone to local
 
