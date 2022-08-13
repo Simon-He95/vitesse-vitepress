@@ -2,6 +2,7 @@
   "name": "simon-js-tool",
   "version": "0.1.3",
   "description": "vitepress",
+  "packageManager": "pnpm@6.32.3",
   "author": "SimonHe",
   "license": "Apache-2.0",
   "keywords": [
