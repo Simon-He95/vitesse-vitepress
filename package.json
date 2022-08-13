@@ -37,7 +37,6 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "vitest -u",
-    "test:e2e": "cypress open",
     "release": "bumpp --commit --tag --push && pnpm publish"
   },
   "devDependencies": {
