@@ -42,3 +42,13 @@
  */
 ```
 
+## getAverage
+获取平均数
+```typescript
+/**
+ * @func getAverage
+ * @desc 获取平均数
+ * @param { number[] } numberArray 数字数组
+ * @example getAverage([1,2,3,4,5])
+ */
+```

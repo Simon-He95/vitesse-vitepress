@@ -154,3 +154,36 @@
   console.log(levels[pwdLevel('q123456')]) // 高
  */
 ```
+## isIPv4
+判断是否是IPv4
+```typescript
+/**
+ * @func isIPv4
+ * @desc 判断是否是IPv4
+ * @param { string } ip 需要判断的数据
+ * @return { Boolean } 
+ * @example isIPv4(ip) // true or false
+ */
+```
+
+## isIPv6
+判断是否是IPv6
+```typescript
+/**
+ * @func isIPv6
+ * @desc 判断是否是isIPv6
+ * @param { string } ip 需要判断的数据
+ * @return { Boolean } 
+ * @example isIPv6(ip) // true or false
+ */
+```
+## isSupportCamera
+判断是否支持摄像头
+```typescript
+/**
+ * @func isSupportCamera
+ * @desc 判断是否支持摄像头
+ * @return { Boolean } 
+ * @example isSupportCamera() // true or false
+ */
+```

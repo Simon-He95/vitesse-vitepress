@@ -78,6 +78,7 @@
  * @func writeFile
  * @param {string | string[]} filePath 文件路径
  * @param {(content: string, index: number) => string} callback 传入文件string类型的内容,可以修改后返回新的内容
+ * @param {BufferEncoding} encoding 默认utf-8
  * @return {void}
  * @desc 📝 快速修改文件内容,支持多个文件同时修改
  * @example 
