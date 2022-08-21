@@ -98,11 +98,16 @@
   //  }
   // </style>
   // 将会杯插入head标签中
+  // 1.
   // addStyle(`
   //   .test {
   //     color: red;
   //   }
   // `)
+  // 2.
+  // addStyle('element-plus/dist/index.css')
+  // 3.
+  // addStyle('./index.css')
  */
 ```
 ## download

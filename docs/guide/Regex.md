@@ -101,7 +101,28 @@
  * @example if (isFile(file)) { doSomething }
  */
 ```
-
+## isNm
+🧿判断是否是node_modules的链接
+```typescript
+/**
+ * @func isNm 
+ * @desc 判断是否是node_modules的链接
+ * @param {string} str 链接
+ * @returns {boolean} 校验是否是node_modules的链接
+ * @example if (isNm(str)) { doSomething }
+ */
+```
+## isRelative
+🧿判断是否是相对路径
+```typescript
+/**
+ * @func isRelative 
+ * @desc 判断是否是相对路径
+ * @param {string} str 链接
+ * @returns {boolean} 校验是否是相对路径
+ * @example if (isRelative(str)) { doSomething }
+ */
+```
 ## isBlob  
 🧿判断是否是Blob类型
 ```typescript
