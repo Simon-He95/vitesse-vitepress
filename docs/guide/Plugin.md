@@ -14,11 +14,11 @@
   // ]
  */
 ```
-## ExportPlugin
+## exportPlugin
 🧿VitePlugin
 ```typescript
 /**
- * @func ExportPlugin
+ * @func exportPlugin
  * @return {Plugin}
  * @desc 将以参数结尾的文件直接导出
  * @example
@@ -30,3 +30,20 @@
   })
  */
 ```
+## copyTemplate
+🧿VitePlugin
+```typescript
+/**
+ * @func copyTemplate
+ * @return {Plugin}
+ * @desc 将模板文件复制到打包后的目录下
+ * @example
+  // 默认拷贝到dist目录下
+  export default defineConfig({
+    plugins: [
+      copyTemplate('./template.html'),
+    ],
+  })
+ */
+```
+
