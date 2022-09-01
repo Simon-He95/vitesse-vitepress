@@ -316,3 +316,66 @@ uniqueArray(array)
  */
 ```
 
+## mapTransform
+🧿生成映射对象结构扁平化
+```typescript
+/**
+ * @func mapTransform
+ * @param {string} str css内容
+ * @return {string} 
+ * @desc 生成映射对象结构扁平化
+ * @example mapTransform(o: Record<string,any>,map:Record<string,string>): Record<string,any>
+ * const o = {
+ *   "player":{
+ *    name:"simon"
+ *  },
+ *  bags:[
+ *    {
+ *    title:"magic"
+ *    }
+ *  ]
+ * }
+ * const map = {
+ *  "player.name":"name",
+ *  "bags[0].title":"attrs"
+ * }
+ * console.log(mapTransform(o, map)) 
+ * {
+ *    "name": "simon",
+ *    "attrs": "magic"
+ * }
+ */
+```
+
+
+## mapTransformBack
+🧿生成映射对象结构反扁平化
+```typescript
+/**
+ * @func mapTransformBack
+ * @param {string} str css内容
+ * @return {string} 
+ * @desc 生成映射对象结构反扁平化
+ * @example mapTransform(o: Record<string,any>,map:Record<string,string>): Record<string,any>
+
+ * const o = {
+ *    "name": "simon",
+ *    "attrs": "magic"
+ * }
+ * const map = {
+ *  "player.name":"name",
+ *  "bags[0].title":"attrs"
+ * }
+ * console.log(mapTransform(o, map)) 
+ * {
+ *   "player":{
+ *    name:"simon"
+ *  },
+ *  bags:[
+ *    {
+ *    title:"magic"
+ *    }
+ *  ]
+ * }
+ */
+```
