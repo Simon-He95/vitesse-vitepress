@@ -379,3 +379,19 @@ uniqueArray(array)
  * }
  */
 ```
+
+## forEach
+🧿一个可终止的forEach
+```typescript
+/**
+ * @func forEach
+ * @param {any[]} array 数组
+ * @param {(value,i,array)=>void} callback 回调函数
+ * @return {any} 
+ * @desc 一个可终止可有返回值的forEach
+ * @example 
+ * const result = forEach([1,2,3],(item,i)=>{
+ *  if(i===1) return item
+ * }) // 2
+ */
+```
