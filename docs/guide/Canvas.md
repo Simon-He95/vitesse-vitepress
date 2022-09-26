@@ -94,3 +94,22 @@
   dotText.append('#main') // 将canvas插入到指定元素中
  */
 ```
+
+## removeRoundSpace
+🧿删除二维数组周围为0的长度
+```typescript
+/**
+ * @Class removeRoundSpace
+ * @param { number[][] } data 二维数组
+ * @desc  删除二维数组周围为0的长度
+ * @return { number[][]  } 
+ * @example 
+ * const data = [
+ *  [0,0,0,0,0],
+ *  [0,1,1,1,0],
+ *  [0,1,1,1,0],
+ *  [0,0,0,0,0]
+ * ]
+  // removeRoundSpace(data) // [[1,1,1],[1,1,1]]
+ */
+```
