@@ -19,9 +19,23 @@
 ```typescript
 /**
  * @Class Canvas
+ * @param { number } width canvas宽度
+ * @param { number } height canvas高度
  * @desc  快速拿到canvas和ctx
  * @return {  { canvas, ctx } } 
- * @example const { canvas, ctx } = new Canvas()
+ * @example const { canvas, ctx } = new Canvas(150,150)
+ */
+```
+
+## getImageData
+🧿快速获取canvas的imageData
+```typescript
+/**
+ * @Class getImageData
+ * @param { string } src 图片地址
+ * @desc  快速获取canvas的imageData
+ * @return {  { data, width, height } } 
+ * @example const { data, width, height } = await getImageData('/assets/image.jpg')
  */
 ```
 

@@ -68,3 +68,33 @@
  * @example base64ToBlob(s: string): Blob
  */
 ```
+
+## arrayToExcel
+将json转换为excel
+```typescript
+/**
+ * @func arrayToExcel
+ * @desc 将json转换为excel
+ * @param IArrayToExcel {  data: Record<string, any>[]  filename?: string  title?: string[]  filter?: string[]}
+ * @example 
+ * const data = [{
+ *  id:1,
+ * title:'标题',
+ * content:{
+ * value:'内容',
+ * background:'red',
+ * color:'yellow'
+ * colspan:2
+ * }
+ * },{
+ * id:2,
+ * title:'标题2',
+ * content:'内容2'
+ * }]
+ * arrayToExcel({
+ * data,
+ * title:['id','标题','内容'],
+ * filter:['id']
+ * })
+ */
+```
