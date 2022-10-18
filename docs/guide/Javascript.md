@@ -395,3 +395,18 @@ uniqueArray(array)
  * }) // 2
  */
 ```
+
+## collisionDetection
+🧿检测物体是否碰撞
+```typescript
+/**
+ * @func collisionDetection
+ * @param {o1: string | HTMLElement, o2: string | HTMLElement}
+ * @return {boolean} 
+ * @desc 可传入dom元素或者选择器
+ * @example 
+ * if(collisionDetection('.box1','.box2')){
+ * console.log('碰撞了')
+ * }
+ */
+```

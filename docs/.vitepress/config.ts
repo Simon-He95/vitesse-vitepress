@@ -24,8 +24,8 @@ module.exports = {
       copyright: 'Copyright © 2022-present SimonHe',
     },
     algolia: {
-      appId: 'ZZNDXJ2XIU',
-      apiKey: 'a6e9af943b8057a410b4059a1bb3306f',
+      appId: 'STWB4WOZ42',
+      apiKey: '1701b060177b65718c4edbc4b1a595e3',
       indexName: 'simon-js-tool',
     },
   },
@@ -51,17 +51,21 @@ function sidebarGuide() {
     },
     {
       text: 'Node',
+      collapsible: true,
       items: [
         { text: '常用', link: '/guide/Node' },
       ],
     },
     {
       text: 'Browser',
+      collapsible: true,
       items: [
         { text: '常用', link: '/guide/Browser' },
         { text: 'Dom相关', link: '/guide/Dom' },
         { text: '设备信息', link: '/guide/Device' },
         { text: '检测性能', link: '/guide/Performance' },
+        { text: '声音相关', link: '/guide/Voice' },
+        { text: '数据上报', link: '/guide/Report' },
       ],
     },
     {
@@ -80,7 +84,7 @@ function sidebarGuide() {
     },
     {
       text: 'TypeCheck',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: 'Regex校验', link: '/guide/Regex' },
         { text: 'JS类型检测', link: '/guide/Type' },
@@ -88,63 +92,63 @@ function sidebarGuide() {
     },
     {
       text: 'Random',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '随机函数', link: '/guide/Random' },
       ],
     },
     {
       text: 'Date',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '日期', link: '/guide/Date' },
       ],
     },
     {
       text: 'Number',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '数字', link: '/guide/Number' },
       ],
     },
     {
       text: 'Canvas',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: 'Canvas操作', link: '/guide/Canvas' },
       ],
     },
     {
       text: 'Event',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '事件', link: '/guide/Event' },
       ],
     },
     {
       text: 'Error',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '错误捕获', link: '/guide/Error' },
       ],
     },
     {
       text: 'Transform',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '数据转换', link: '/guide/Transform' },
       ],
     },
     {
       text: 'Request',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: 'Fetch', link: '/guide/Request' },
       ],
     },
     {
       text: 'Common',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '性能优化', link: '/guide/Perf' },
         { text: '常用函数', link: '/guide/Common' },
@@ -152,28 +156,28 @@ function sidebarGuide() {
     },
     {
       text: 'Regex校验',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: 'Regex校验', link: '/guide/Regex' },
       ],
     },
     {
       text: 'Plugin',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: 'Vite', link: '/guide/Plugin' },
       ],
     },
     {
       text: 'Javascript',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '常用', link: '/guide/Javascript' },
       ],
     },
     {
       text: 'String',
-      collapsible: false,
+      collapsible: true,
       items: [
         { text: '字符串', link: '/guide/String' },
       ],

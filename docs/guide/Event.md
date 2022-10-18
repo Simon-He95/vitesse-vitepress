@@ -67,3 +67,63 @@
   eventBus.off('test',listener)
  */
 ```
+
+## useMouse
+🧿监听鼠标移动
+```typescript
+/**
+ * @func useMouse
+ * @params { callback: (e: MouseEvent) => void, delay = 0 } callback 回调函数，delay x毫秒内只执行一次
+ * @desc 监听鼠标移动
+ * @return { e } MouseEvent
+ * @example
+  useMouse((e)=>{
+    console.log(e.clientX, e.clientY)
+  })
+ */
+```
+
+## useClick
+🧿监听鼠标点击事件
+```typescript
+/**
+ * @func useClick
+ * @params { target: string | HTMLElement, callback: (e: MouseEvent) => void } target 目标元素，callback 回调函数
+ * @desc 监听鼠标点击事件
+ * @return { void }
+ * @example
+  useClick('#btn', (e)=>{
+    console.log(e.target)
+  })
+ */
+```
+
+## useHover
+🧿监听元素hover事件
+```typescript
+/**
+ * @func useHover
+ * @params { target: string | HTMLElement, callback: (isHover: boolean, e: MouseEvent) => void } target 目标元素，callback 回调函数
+ * @desc 监听元素hover事件
+ * @return { () => void }
+ * @example
+  useHover('#btn', (isHover,e)=>{
+    if(isHover){
+      console.log('hover')
+  })
+ */
+```
+
+## useFocus
+🧿自动聚焦
+```typescript
+/**
+ * @func useFocus
+ * @params { target: string | HTMLElement } target 目标元素
+ * @desc 自动聚焦
+ * @return { void }
+ * @example
+  // <div class="input-wrapper"><input type="text"/></div>
+  useFocus('.input-wrapper')
+ */
+```

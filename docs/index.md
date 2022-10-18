@@ -9,20 +9,20 @@ hero:
   text: 减少重复代码和开发成本的javascript工具库
   actions:
     - theme: brand
-      text: Get Started
+      text: 快速开始
       link: /guide/
     - theme: alt
-      text: View on GitHub
+      text: 查看源码
       link: https://github.com/Simon-He95/simon-js-tool
 
 features:
   - title: TypeScript
-    details: 基于 TypeScript 编写，Rollup打包的一款现代 JS 函数类库 
+    details: 基于 TypeScript 编写，提供函数良好的类型提示
   - title: ES6+
     details: 适用于现代浏览器，基于ES6+的JavaScript规范，良好的兼容性
   - title: Powerful
     details: 包含node、js、css、html和vitePlugin等等, 因为是纯js，所以可在vue、react、svelte等等框架中使用，支持移动端和pc端
-  - title: More
-    details: 加入我们，更多能力等你挖掘....  
+  - title: Highlight
+    details: 可以直接在框架中调用不依赖于运行的hooks,并且副作用函数会被自动销毁
    
 ---
