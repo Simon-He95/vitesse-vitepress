@@ -32,10 +32,8 @@
     "node": ">=14.6"
   },
   "scripts": {
-    "build": "pkgroll --minify",
-    "dev": "pkgroll --watch",
-    "play": "vitepress dev docs --open",
-    "play:build": "vitepress build docs",
+    "dev": "vitepress dev docs --open",
+    "build": "vitepress build docs",
     "preview": "vitepress serve docs",
     "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
     "lint:fix": "pnpm run lint --fix",
