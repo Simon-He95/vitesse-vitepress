@@ -1,4 +1,58 @@
 # Browser
+## setCssVar
+🧿设置css变量值
+```typescript
+/**
+ * @func setCssVar
+ * @param {element:string | HTMLElement } 元素
+ * @param {styleObj: Record<string, string>} 样式
+ * @desc 设置css变量值
+ * @example
+  <div class="box" style="--var-special-color:red"></div>
+ setCssVar('.box', {
+  '--var-special-color':'red',
+  '--var-common-color':'blue'
+  })
+ */
+```
+## getCssVar
+🧿获取css变量值
+```typescript
+/**
+ * @func getCssVar
+ * @param {element:string | HTMLElement } 元素
+ * @param {style: string} 样式
+ * @param {callback: (css: string) => void} 样式
+ * @desc 获取css变量值
+ * @example
+  <div class="box" style="--var-special-color:red"></div>
+ getCssVar('.box', '--var-special-color', (css) => {
+    console.log(css) // red
+ })
+ */
+```
+## useCamera
+🧿调用摄像头
+```typescript
+/**
+ * @func useShare
+ * @param {video: {
+  width: number
+  height: number
+} } video宽高 
+ * @param {container: string | HTMLVideoElement = 'video'} video容器
+ * @desc 调用摄像头
+ * @example
+  <video></video>
+  useCamera(
+    video: {
+      width: 300,
+      height: 300
+    },
+    'video'
+  )
+ */
+```
 ## useShare
 🧿通过调用本机的共享机制作为 Web Share API 的一部分。
 ```typescript

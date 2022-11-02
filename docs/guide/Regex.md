@@ -1,6 +1,25 @@
 # Regex
-
-
+## isWin
+是否是windows系统
+```typescript
+/**
+ * @func isWin
+ * @desc  是否是windows系统
+ * @return { boolean } 是否是windows系统
+ * @example if (isWin()) { // windows }
+ */
+```
+## isVideo
+是否是视频
+```typescript
+/**
+ * @func isVideo
+ * @desc  是否是视频
+ * @param { string } str 需要判断的数据
+ * @return { boolean } 是否是视频
+ * @example if (isVideo(str)) { // is video }
+ */
+```
 ## isChines
 是否是中文
 ```typescript

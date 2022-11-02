@@ -1,4 +1,15 @@
 # Node
+## getPkgTool
+🧿获取当前项目的包管理工具
+```typescript
+/**
+ * @func getPkgTool
+ * @return {'yarn' | 'pnpm' | 'npm' | 'bun'}
+ * @desc 获取当前项目的包管理工具
+ * @example 
+  getPkgTool() // 'pnpm'
+ */
+```
 ## jsShell
 🧿js调用shell命令
 ```typescript

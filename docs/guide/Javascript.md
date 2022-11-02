@@ -410,3 +410,30 @@ uniqueArray(array)
  * }
  */
 ```
+
+## generateQRCode
+🧿根据链接生成二维码
+```typescript
+/**
+ * @func generateQRCode
+ * @param {content: string | HTMLCanvasElement, base64?: boolean, options?: Options<T, K>}
+ * @return {boolean} 
+ * @desc 可传入dom元素或者选择器
+ * @example 
+ * generateQRCode('http://xxxx',true) // base64 二维码
+ * generateQRCode('http://xxxx',false) // svg 二维码
+ */
+```
+
+## changeStack
+🧿监听当前环境目标元素的栈变化
+```typescript
+/**
+ * @func changeStack
+ * @param {target: string | Element}
+ * @return {boolean} 
+ * @desc 可传入dom元素或者选择器
+ * @example 
+ * changeStack('.box')
+ */
+```

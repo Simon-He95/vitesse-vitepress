@@ -54,25 +54,25 @@
 ```
 
 ## lazyLoad
-🧿图片懒加载
+🧿图片视频懒加载
 ```typescript
 /**
  * @func lazyLoad
- * @param {string|Element} element 图片元素
+ * @param {string|Element} element 父容器
  * @param {Element} root 指定相对容器默认是body
  * @param {string} rootMargin 距离相对容器的距离多少加载图片 默认: '0px 0px 200px 0px' 距离底部200px加载图片
  * @param {number} threshold 指定图片加载的阈值
  * @param {string|Element} element 图片元素
  * @return {void}
- * @desc 图片懒加载
+ * @desc 图片视频懒加载
  * @example
   // usage
-  // 默认展示src的图片，当滚动到图片的时候data-src替换src
-    lazyLoad(document.querySelectorAll("img"));
-    lazyLoad("img[data-src]");
-    lazyLoad(".img-wrapper>img");
-  // template
-    <img src="temp" data-src="../public/favicon.svg" alt="" h-10 bg-red />
+  // main容器下所有的图片和video都会被懒加载，默认会使用一个loading，可以在第二个参数覆盖loading，如果想针对某个设置独立的loading，可以在元素的src="loading.gif" data-src="picture.png"
+  <main>
+    <video src="xxx.mp4"></video>
+    <img src="loading.gif" data-src="picture.png" />
+  </main>
+    lazyLoad('#main','xxx.loading.gif'); 
  */
 ```
 ## compressImage
