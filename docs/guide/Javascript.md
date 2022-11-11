@@ -437,3 +437,67 @@ uniqueArray(array)
  * changeStack('.box')
  */
 ```
+
+## hasOwn
+🧿判断对象是否含有这个属性
+```typescript
+/**
+ * @func hasOwn
+ * @param {target: Object, property:string}
+ * @return {boolean} 
+ * @desc 判断对象是否含有这个属性
+ * @example 
+ * const obj = {name: "simon"}
+ * hasOwn(obj,'name') //true
+ */
+```
+
+## isNil
+🧿判断对象是否是null或undefined
+```typescript
+/**
+ * @func isNil
+ * @param {target:any}
+ * @return {boolean} 
+ * @desc 判断对象是否是null或undefined
+ * @example 
+ * isNil(Null) //true
+ * isNil(Null) //true
+ * isNil('undefined') //false
+ */
+```
+
+## toObject
+🧿将数组转换成对象
+```typescript
+/**
+ * @func toObject
+ * @param {arr: Array<any>}
+ * @param { filter: string[] = []} 保留filter中的key
+ * @return {boolean} 
+ * @desc 将数组转换成对象
+ * @example 
+  const arr = [{
+    a: 1,
+  }, {
+    a: 3,
+    3: 5,
+  }]
+  const data = toObject(arr, ['a']) // { a: [ 1, 3 ] }
+ */
+```
+
+## toArray
+🧿将数组中截取尾部换成新数组
+```typescript
+/**
+ * @func toArray
+ * @param {list: any } 原数组
+ * @param { start?: number } 开始位置
+ * @return {Array<any>}} 新数组
+ * @desc slice的效果，但是更好的兼容性
+ * @example 
+  const arr = [1,3,5,7,9]
+  toArray(arr,2) // [5,7,9]
+ */
+```

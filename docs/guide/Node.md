@@ -16,6 +16,7 @@
 /**
  * @func jsShell
  * @param {string} cmd shell命令
+ * @param {string} type ‘pipe’ | ‘inherit’ 在当前进程中执行 | 在新的进程中执行
  * @return {String}
  * @desc 基于node封装的js调用shell命令
  * @example 
@@ -107,5 +108,36 @@
  * @return {void}
  * @desc 📝 unocss作为props传入的组件打包会丢失注释// @unocss-include,这个函数会自动插入到打包后的文件头部
  * @example insertUnocssInclude()
+ */
+```
+
+## useNodeWorker
+🧿使用node worker 父进程
+```typescript
+/**
+ * @func useNodeWorker
+ * @param { string } url worker文件路径
+ * @param { any } data 传递给worker的数据
+ * @return { Promise<any> }
+ * @desc 📝 node worker封装
+ * @example 
+ * useNodeWorker（'./worker.js', {a: 1}.then(res => console.log(res)) // {a: 5}
+ */
+```
+
+## useProcressNodeWorker
+🧿使用node worker 子进程
+```typescript
+/**
+ * @func useProcressNodeWorker
+ * @param { (data: any) => any } callback 回调函数
+ * @return { void }
+ * @desc 📝 node worker封装
+ * @example 
+ * useProcressNodeWorker((data)=>{
+ *  console.log(data) // {a:1}
+ * data.a = data.a * 5
+ * return data
+ * }）
  */
 ```

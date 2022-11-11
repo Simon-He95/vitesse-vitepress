@@ -39,17 +39,17 @@
 ```
 
 ## preload
-🧿预加载图片
+🧿预加载资源支持图片或视频
 ```typescript
 /**
  * @func preload
- * @param {string|string[]} src 图片路径或图片路径集合
+ * @param {string|string[]} src 图片或视频路径或图片视频路径集合
  * @return {void}
- * @desc 预加载图片
+ * @desc 预加载资源
  * @example
-  preload('https://img.yzcdn.cn/vant/cat.jpeg')
-  preload(['https://img.yzcdn.cn/vant/cat.jpeg', 'https://img.yzcdn.cn/vant/dog.jpeg'])
+  preload('https://img.yzcdn.cn/vant/cat.jpeg'，'video.mp4')
   <img src="https://img.yzcdn.cn/vant/cat.jpeg" /> // memory cache
+  <video src="video.mp4" /> // memory cache
  */
 ```
 
