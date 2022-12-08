@@ -4,14 +4,15 @@
 ```typescript
 /**
  * @func vitePluginTransformVdeep
- * @return {Plugin}
- * @desc 将>>> 和 /deep/ 转换成 :deep()
+ * @return { Plugin }
+ * @desc 📝 将>>> 和 /deep/ 转换成 :deep()
  * @example
   // vite.config.ts
-  // import { vitePluginTransformVdeep } from 'simon-js-tool'
-  // plugins: [
-  //   vitePluginTransformVdeep(),
-  // ]
+  import { vitePluginTransformVdeep } from 'lazy-js-utils'
+
+  plugins: [
+    vitePluginTransformVdeep(),
+  ]
  */
 ```
 ## vitePluginExport
@@ -19,9 +20,11 @@
 ```typescript
 /**
  * @func vitePluginExport
- * @return {Plugin}
- * @desc 将以参数结尾的文件直接导出
+ * @return { Plugin }
+ * @desc 📝 将以参数结尾的文件直接导出
  * @example
+  import { vitePluginExport } from 'lazy-js-utils'
+
   // glsl文件即可import glsl from 'xxx.glsl
   export default defineConfig({
     plugins: [
@@ -36,12 +39,14 @@
 /**
  * @func vitePluginCopyHtml
  * @return {Plugin}
- * @desc 将模板文件复制到打包后的目录下, 并自动导入css和js文件
+ * @desc 📝 将模板文件复制到打包后的目录下, 并自动导入css和js文件
  * @example
+  import { vitePluginCopyHtml } from 'lazy-js-utils'
+
   // 默认拷贝到dist目录下
   export default defineConfig({
     plugins: [
-      copyTemplate('./template.html'),
+      vitePluginCopyHtml('./template.html'),
     ],
   })
  */

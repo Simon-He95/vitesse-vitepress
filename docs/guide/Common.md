@@ -1,155 +1,104 @@
 # Common
-## sort
-🧿数组排序
+## hasOwn
+🧿判断对象是否有某个属性
 ```typescript
 /**
- * @func sort
- * @desc  打印
- * @param { string } array 待排序的数组
- * @param { any } regular 排序规则,常规number[],1升序,-1降序,默认升序; 复杂类型需要自定义排序规则['name'],安装数组对象name属性升序等等...
- * @return { Array } 
+ * @func hasOwn
+ * @desc 📝 打印
+ * @param { Object } obj 需要判断的对象
+ * @param { string } key 需要判断的属性
+ * @return { boolean } 
  * @example 
-  const numbers =  [1, 5, 7, 3, 2, 4, 6, 8, 9, 10]
-  console.log(sort(numbers,1)) // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  console.log(sort(numbers,-1)) // [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-  const array = [{name: 'simon', age: 18}, {name: 'kitty', age: 20}]
-  console.log(sort(array, 'name')) // [{name: 'kitty', age: 20}, {name: 'simon', age: 18}]
-  console.log(sort(array, '-name')) // [{name: 'simon', age: 18}, {name: 'kitty', age: 20}]
-  const array2 = [{name: 'simon', age: 18}, {name: 'kitty', age: 20},{name: 'simon', age: 19}]
-  console.log(sort(array2, ['age','name'])) // [{name: 'kitty', age: 20}, {name: 'simon', age: 18}, {name: 'simon', age: 19}]
-  console.log(sort(array2, ['-age','name'])) // [{name: 'simon', age: 19}, {name: 'simon', age: 18}, {name: 'kitty', age: 20}]
+  import { hasOwn } from 'lazy-js-utils'
+
+  const obj = {
+    name: 'lazy',
+    age: 18
+  }
+  hasOwn(obj,'name') // true
  */
 ```
 
-## sortByOrder
-🧿将数组按照另一个数组的顺序排序
+## EXPORT_DEFAULT_RE
+🧿正则匹配export default
 ```typescript
 /**
- * @func sortByOrder
- * @param {any[]} array 数组
- * @param {string} prop  数组的对象中的属性名称
- * @param { string[] } order  排序的数组
- * @return {Array}
- * @desc 将数组按照另一个数组的顺序排序
+ * @func EXPORT_DEFAULT_RE
+ * @desc 📝 正则匹配export default
  * @example 
-  const order = ['name', '*', 'weight']
-  const arr = [{
-    props: {
-      key: 'weight'
-    }
-  }, {
-    props: {
-      key: 'name'
-    }
-  }, {
-    props: {
-      key: 'width'
-    }
-  }, {
-    props: {
-      key: 'age'
-    }
-  }]
-  const result = sortByOrder(arr, order, 'props.key')
-  [
-    {
-      "props": {
-        "key": "name",
-      },
-    },
-    {
-      "props": {
-        "key": "width",
-      },
-    },
-    {
-      "props": {
-        "key": "age",
-      },
-    },
-    {
-      "props": {
-        "key": "weight",
-      },
-    },
-  ]
+  import { EXPORT_DEFAULT_RE } from 'lazy-js-utils'
+
+  const str = 'export default { name: "lazy" }'
+  str.match(EXPORT_DEFAULT_RE) // ["export default { name: "lazy" }"]
  */
 ```
 
-## getLru
-🧿记录有限的数据,删除最久未访问的数据
+## DYNAMIC_IMPORT_RE
+🧿正则匹配动态import
 ```typescript
 /**
- * @func getLru
- * @param {any[]} max 最大缓存数量
- * @return {Object}
- * @desc 记录有限的数据,删除最久未访问的数据
+ * @func DYNAMIC_IMPORT_RE
+ * @desc 📝 正则匹配动态import default
  * @example 
-  const lru = getLru(2)
-  lru.set('a', 1)
-  lru.set('b', 2)
-  console.log(lru.get('a')) // 1
-  lru.set('b', 3)
-  console.log(lru.size()) // 2
-  console.log(lru.get('a')) // 1
-  console.log(lru.get('b')) // undefined
+  import { DYNAMIC_IMPORT_RE } from 'lazy-js-utils'
+
+  const str = 'const a = import("./a.js")'
+  str.match(DYNAMIC_IMPORT_RE) // ["import("./a.js")"]
  */
 ```
-## log
-🧿简化console.log的使用
+
+## EXPORT_DECAL_RE
+🧿正则匹配export
 ```typescript
 /**
- * @func log
- * @param {string} msg 消息
- * @param {string} color 颜色
- * @param {number} fontSize 字体大小
- * @return {void}
- * @desc 简化console.log的使用
- * @example log('hello world') // hello world
- */
-```
-## scrollToTop
-🧿回到顶部
-```typescript
-/**
- * @func scrollToTop
- * @return {void}
- * @desc 回到顶部
+ * @func EXPORT_DECAL_RE
+ * @desc 📝 正则匹配export
  * @example 
-  // 缓慢回到顶部 
-  scrollToTop()
+  import { EXPORT_DECAL_RE } from 'lazy-js-utils'
+
+  const str = 'export const a = 1'
+  str.match(EXPORT_DECAL_RE) // ["export const a = 1"]
  */
 ```
-## scrollToView
-🧿滚动到指定元素
+
+## EXPORT_NAMED_RE
+🧿正则匹配export
 ```typescript
 /**
- * @func scrollToView
- * @param {HTMLElement | string} element: 可视目标元素
- * @return {void}
- * @desc 滚动到指定元素
- * @example scrollToView(el: HTMLElement | string)
+ * @func EXPORT_NAMED_RE
+ * @desc 📝 正则匹配export
+ * @example 
+  import { EXPORT_NAMED_RE } from 'lazy-js-utils'
+
+  const str = 'export { a }'
+  str.match(EXPORT_NAMED_RE) // ["export { a }"]
  */
 ```
-## getScrollPosition
-🧿获取滚动位置
+
+## EXPORT_STAR_RE
+🧿正则匹配export
 ```typescript
 /**
- * @func getScrollPosition
- * @return {{ x: number, y: number }}
- * @desc 获取滚动位置
- * @example console.log(getScrollPosition()) // { x: number, y: number }
+ * @func EXPORT_STAR_RE
+ * @desc 📝 正则匹配export
+ * @example 
+  import { EXPORT_STAR_RE } from 'lazy-js-utils'
+
+  const str = 'export * from "./a.js"'
+  str.match(EXPORT_STAR_RE) // ["export * from "./a.js""]
  */
 ```
-## isBottom
-🧿判断滚动是否触底
+
+## EXPORT_DEFAULT_RE
+🧿正则匹配export default
 ```typescript
 /**
- * @func isBottom
- * @return {Boolean} 
- * @desc 📝 判断滚动是否触底
- * @example
-  // isBottom(distance: string = 0): boolean
-  console.log(isBottom()) // false
+ * @func EXPORT_DEFAULT_RE
+ * @desc 📝 正则匹配export
+ * @example 
+  import { EXPORT_DEFAULT_RE } from 'lazy-js-utils'
+
+  const str = 'export default { name: "lazy" }'
+  str.match(EXPORT_DEFAULT_RE) // ["export default { name: "lazy" }"]
  */
 ```

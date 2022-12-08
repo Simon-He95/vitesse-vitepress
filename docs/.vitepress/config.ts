@@ -1,6 +1,6 @@
 module.exports = {
   lang: 'zh-CN',
-  title: 'simon-js-tool',
+  title: 'lazy-js-utils',
   base: '/',
   description: '减少重复代码和开发成本的javascript工具库',
   lastUpdated: true,
@@ -14,9 +14,9 @@ module.exports = {
     sidebar: {
       '/guide/': sidebarGuide(),
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/Simon-He95/simon-js-tool' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/Simon-He95/lazy-js-utils' }],
     editLink: {
-      pattern: 'https://github.com/Simon-He95/simon-js-tool',
+      pattern: 'https://github.com/Simon-He95/lazy-js-utils',
       text: '在GitHub编辑此页',
     },
     footer: {
@@ -26,7 +26,7 @@ module.exports = {
     algolia: {
       appId: 'STWB4WOZ42',
       apiKey: '1701b060177b65718c4edbc4b1a595e3',
-      indexName: 'simon-js-tool',
+      indexName: 'lazy-js-utils',
     },
   },
 }
@@ -34,7 +34,7 @@ module.exports = {
 function nav() {
   return [
     { text: '介绍', link: '/guide/' },
-    { text: '加入我们', link: 'https://github.com/Simon-He95/simon-js-tool' },
+    { text: '加入我们', link: 'https://github.com/Simon-He95/lazy-js-utils' },
   ]
 }
 
@@ -42,7 +42,7 @@ function sidebarGuide() {
   return [
     {
       text: '介绍',
-      collapsible: true,
+      collapsible: false,
       items: [
         { text: '介绍', link: '/guide/' },
         { text: '快速上手', link: '/guide/start' },
@@ -51,135 +51,191 @@ function sidebarGuide() {
     },
     {
       text: 'Node',
-      collapsible: true,
+      collapsible: false,
       items: [
-        { text: '常用', link: '/guide/Node' },
+        { text: 'node', link: '/guide/Node' },
       ],
     },
     {
-      text: 'Browser',
-      collapsible: true,
+      text: 'Canvas',
+      collapsible: false,
       items: [
-        { text: '常用', link: '/guide/Browser' },
-        { text: 'Dom相关', link: '/guide/Dom' },
-        { text: '设备信息', link: '/guide/Device' },
-        { text: '检测性能', link: '/guide/Performance' },
-        { text: '声音相关', link: '/guide/Voice' },
-        { text: '数据上报', link: '/guide/Report' },
+        { text: 'canvas', link: '/guide/Canvas' },
       ],
     },
     {
-      text: 'Image',
+      text: 'Number',
+      collapsible: false,
       items: [
-        { text: '图片相关', link: '/guide/Image' },
-      ],
-    },
-    {
-      text: 'Store',
-      collapsible: true,
-      items: [
-        { text: 'Cookie操作', link: '/guide/Cookie' },
-        { text: 'Storage操作', link: '/guide/Storage' },
-      ],
-    },
-    {
-      text: 'TypeCheck',
-      collapsible: true,
-      items: [
-        { text: 'Regex校验', link: '/guide/Regex' },
-        { text: 'JS类型检测', link: '/guide/Type' },
+        { text: '数字', link: '/guide/Number' },
       ],
     },
     {
       text: 'Random',
-      collapsible: true,
+      collapsible: false,
       items: [
         { text: '随机函数', link: '/guide/Random' },
       ],
     },
     {
       text: 'Date',
-      collapsible: true,
+      collapsible: false,
       items: [
         { text: '日期', link: '/guide/Date' },
       ],
     },
     {
-      text: 'Number',
-      collapsible: true,
-      items: [
-        { text: '数字', link: '/guide/Number' },
-      ],
-    },
-    {
-      text: 'Canvas',
-      collapsible: true,
-      items: [
-        { text: 'Canvas操作', link: '/guide/Canvas' },
-      ],
-    },
-    {
       text: 'Event',
-      collapsible: true,
+      collapsible: false,
       items: [
         { text: '事件', link: '/guide/Event' },
       ],
     },
     {
-      text: 'Error',
-      collapsible: true,
+      text: 'Log',
+      collapsible: false,
       items: [
-        { text: '错误捕获', link: '/guide/Error' },
+        { text: '日志', link: '/guide/Log' },
       ],
     },
     {
-      text: 'Transform',
-      collapsible: true,
+      text: 'Message',
+      collapsible: false,
       items: [
-        { text: '数据转换', link: '/guide/Transform' },
+        { text: '通信', link: '/guide/Message' },
+      ],
+    },
+    {
+      text: 'Vite',
+      collapsible: false,
+      items: [
+        { text: '插件', link: '/guide/VitePlugin' },
+      ],
+    },
+    {
+      text: 'Array',
+      collapsible: false,
+      items: [
+        { text: '数组', link: '/guide/Array' },
+      ],
+    },
+    {
+      text: 'Compress',
+      collapsible: false,
+      items: [
+        { text: '压缩', link: '/guide/Compress' },
+      ],
+    },
+    {
+      text: 'Css',
+      collapsible: false,
+      items: [
+        { text: 'css', link: '/guide/Css' },
+      ],
+    },
+    {
+      text: 'Flex',
+      collapsible: false,
+      items: [
+        { text: '布局', link: '/guide/Flex' },
+      ],
+    },
+    {
+      text: 'Https',
+      collapsible: false,
+      items: [
+        { text: 'https', link: '/guide/Https' },
       ],
     },
     {
       text: 'Request',
-      collapsible: true,
+      collapsible: false,
       items: [
-        { text: 'Fetch', link: '/guide/Request' },
-      ],
-    },
-    {
-      text: 'Common',
-      collapsible: true,
-      items: [
-        { text: '性能优化', link: '/guide/Perf' },
-        { text: '常用函数', link: '/guide/Common' },
-      ],
-    },
-    {
-      text: 'Regex校验',
-      collapsible: true,
-      items: [
-        { text: 'Regex校验', link: '/guide/Regex' },
-      ],
-    },
-    {
-      text: 'Plugin',
-      collapsible: true,
-      items: [
-        { text: 'Vite', link: '/guide/Plugin' },
+        { text: '请求', link: '/guide/Request' },
       ],
     },
     {
       text: 'Javascript',
-      collapsible: true,
+      collapsible: false,
       items: [
-        { text: '常用', link: '/guide/Javascript' },
+        { text: 'js', link: '/guide/Javascript' },
+      ],
+    },
+    {
+      text: 'Monitor',
+      collapsible: false,
+      items: [
+        { text: '设备信息', link: '/guide/Monitor' },
+      ],
+    },
+    {
+      text: 'Parse',
+      collapsible: false,
+      items: [
+        { text: '解析', link: '/guide/Parse' },
+      ],
+    },
+    {
+      text: 'Qrcode',
+      collapsible: false,
+      items: [
+        { text: '二维码', link: '/guide/Qrcode' },
+      ],
+    },
+    {
+      text: 'Screen',
+      collapsible: false,
+      items: [
+        { text: '浏览器', link: '/guide/Screen' },
+      ],
+    },
+    {
+      text: 'Script',
+      collapsible: false,
+      items: [
+        { text: '动态脚本', link: '/guide/Script' },
+      ],
+    },
+    {
+      text: 'Scroll',
+      collapsible: false,
+      items: [
+        { text: '滚动', link: '/guide/Scroll' },
+      ],
+    },
+    {
+      text: 'Speak',
+      collapsible: false,
+      items: [
+        { text: '语言', link: '/guide/Speak' },
+      ],
+    },
+    {
+      text: 'Perf',
+      collapsible: false,
+      items: [
+        { text: '性能优化', link: '/guide/Perf' },
+      ],
+    },
+    {
+      text: 'Storage',
+      collapsible: false,
+      items: [
+        { text: '浏览器数据存储', link: '/guide/Storage' },
       ],
     },
     {
       text: 'String',
-      collapsible: true,
+      collapsible: false,
       items: [
         { text: '字符串', link: '/guide/String' },
+      ],
+    },
+    {
+      text: 'To',
+      collapsible: false,
+      items: [
+        { text: '类型转换', link: '/guide/To' },
       ],
     },
   ]

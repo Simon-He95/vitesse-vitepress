@@ -5,7 +5,7 @@
 /**
  * @func monitorPef
  * @return {void}
- * @desc 数字化浏览器性能指标
+ * @desc 📝 数字化浏览器性能指标
  * @example
   monitorPef() 
   // 重定向时间	0

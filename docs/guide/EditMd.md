@@ -22,7 +22,7 @@
 设计一个对象的观测者-proxy方案  //注释
 /**
  * @func observeProxy
- * @desc 设计一个对象的观测者-proxy方案
+ * @desc 📝 设计一个对象的观测者-proxy方案
  * @param { Object } obj 对象
  * @return { cal } 观测对象回调方法
  * @github git链接

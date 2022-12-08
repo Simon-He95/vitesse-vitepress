@@ -1,7 +1,7 @@
-# 什么是simon-js-tool？
-[simon-js-tool](https://github.com/Simon-He95/simon-js-tool)，是一个纯javascript实现的开箱即用工具库,主要用于简化开发过程，提高开发效率。
+# 什么是lazy-js-utils？
+[lazy-js-utils](https://github.com/Simon-He95/lazy-js-utils)，是一个纯javascript实现的开箱即用工具库,主要用于简化开发过程，提高开发效率。
 ::: warning
-simon-js-tool 当前仍在 `开发中` 状态. 目前已整理了100+个常用函数，但文档和API可能仍会在一些版本之间发生变化。
+lazy-js-utils 当前仍在 `开发中` 状态. 目前已整理了100+个常用函数，但文档和API可能仍会在一些版本之间发生变化。
 :::
 
 ## 动机

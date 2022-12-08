@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title: simon-js-tool
+title: lazy-js-utils
 titleTemplate: 减少重复代码和开发成本的javascript工具库
 
 hero:
-  name: simon-js-tool
+  name: lazy-js-utils
   text: 减少重复代码和开发成本的javascript工具库
   actions:
     - theme: brand
@@ -13,7 +13,7 @@ hero:
       link: /guide/
     - theme: alt
       text: 查看源码
-      link: https://github.com/Simon-He95/simon-js-tool
+      link: https://github.com/Simon-He95/lazy-js-utils
 
 features:
   - title: TypeScript
