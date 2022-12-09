@@ -1,6 +1,9 @@
 # Array
+
 ## diff
-🧿对比2个数组中的相同或不同的部分
+
+🧿 对比 2 个数组中的相同或不同的部分
+
 ```typescript
 /**
  * @func diff
@@ -24,8 +27,11 @@
   diff(arr1, arr2, { compare: 'different', result: 'index' }) // [1]
  */
 ```
+
 ## forEach
-🧿一个可中断的forEach
+
+🧿 一个可中断的 forEach
+
 ```typescript
 /**
  * @func forEach
@@ -44,8 +50,11 @@
   }) // 'break'
  */
 ```
+
 ## getAverage
-🧿获取数组的平均值
+
+🧿 获取数组的平均值
+
 ```typescript
 /**
  * @func getAverage
@@ -60,8 +69,11 @@
   getAverage(arr, 2) // 3.00
  */
 ```
+
 ## quickFilter
-🧿快速过滤数组
+
+🧿 快速过滤数组
+
 ```typescript
 /**
  * @func quickFilter
@@ -85,8 +97,11 @@
     quickFilter(arr, ['name=/lisi/','age=/18/']) // [ { name: 'lisi' }, { name: 'wangwu', age: 18 } ]
  */
 ```
+
 ## quickFind
-🧿o(1)的根据key查找数组中的项
+
+🧿o(1)的根据 key 查找数组中的项
+
 ```typescript
 /**
  * @func quickFind
@@ -116,10 +131,12 @@
   const qf = quickFind(arr, 'id')
   qf.find(1) // { id: 1, name: 'zhangsan' }
  */
-
 ```
+
 ## sort
-🧿数组排序
+
+🧿 数组排序
+
 ```typescript
 /**
  * @func sort
@@ -147,7 +164,9 @@
 ```
 
 ## sortByOrder
-🧿按照顺序排序
+
+🧿 按照顺序排序
+
 ```typescript
 /**
 * @func sortByOrder
@@ -179,8 +198,11 @@
   sortByOrder(arr, order, 'props.key') // [{ props: { key: 'name' } }, { props: { key: 'weight' } }, { props: { key: 'width' } }, { props: { key: 'age' } }]
 */
 ```
+
 ## uniqueArray
-🧿数组根据值去重
+
+🧿 数组根据值去重
+
 ```typescript
 /**
 * @func uniqueArray

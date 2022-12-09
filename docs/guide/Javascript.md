@@ -1,6 +1,9 @@
 # Javascript
+
 ## listenStack
-🧿监听目标元素的事件栈
+
+🧿 监听目标元素的事件栈
+
 ```typescript
 /**
  * @func listenStack
@@ -13,8 +16,11 @@
   const stop = listenStack(document.body)
  */
 ```
+
 ## copy
-🧿通过js将内容放入剪贴板中
+
+🧿 通过 js 将内容放入剪贴板中
+
 ```typescript
 /**
  * @func copy
@@ -29,7 +35,9 @@
 ```
 
 ## sleep
-🧿睡眠函数
+
+🧿 睡眠函数
+
 ```typescript
 /**
  * @func sleep
@@ -46,8 +54,11 @@
   // await sleep(1000)
  */
 ```
+
 ## curry
-🧿函数柯里化
+
+🧿 函数柯里化
+
 ```typescript
 /**
  * @func curry

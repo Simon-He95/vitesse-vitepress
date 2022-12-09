@@ -1,6 +1,9 @@
 # Number
+
 ## calNum
+
 计算数字
+
 ```typescript
 /**
  * @func calNum
@@ -16,8 +19,11 @@
   console.log(calNum.mul(0.1, 0.2, 0.2)) // 0.004
  */
 ```
+
 ## formateNum
+
 将数字格式化
+
 ```typescript
 /**
  * @func formateNum
@@ -33,8 +39,11 @@
   console.log(formateNum(12253.123, 2)) // '12,253.12'
  */
 ```
+
 ## uppercaseNum
+
 将数字转换为大写字母
+
 ```typescript
 /**
  * @func uppercaseNum

@@ -1,7 +1,10 @@
 # Request
+
 ## VFetch
-- 基于fetch的axios api 式promise请求封装
+
+- 基于 fetch 的 axios api 式 promise 请求封装
 - 重复请求上一个请求如果没有完成，则会取消上一个请求，并重新发起请求
+
 ```typescript
 /**
  * @Class VFetch
@@ -62,8 +65,11 @@
   })
  */
 ```
+
 ## asyncPool
+
 🧿 限制并发数的异步池
+
 ```typescript
 /**
  * @func asyncPool
@@ -86,8 +92,11 @@
   })
  */
 ```
+
 # sendBeacon
-🧿页面关闭时数据上报
+
+🧿 页面关闭时数据上报
+
 ```typescript
 /**
  * @func sendBeacon

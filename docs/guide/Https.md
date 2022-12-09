@@ -1,6 +1,9 @@
 # Https
+
 ## httpsRedirect
-🧿对比2个数组中的相同或不同的部分
+
+🧿 对比 2 个数组中的相同或不同的部分
+
 ```typescript
 /**
  * @func httpsRedirect

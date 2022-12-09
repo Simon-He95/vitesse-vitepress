@@ -1,6 +1,9 @@
 # Scroll
+
 ## getScrollPosition
-🧿获取滚动条位置
+
+🧿 获取滚动条位置
+
 ```typescript
 /**
  * @func getScrollPosition
@@ -12,8 +15,11 @@
   const { x, y } = getScrollPosition()
  */
 ```
+
 ## scrollToTop
-🧿平缓滚动到顶部
+
+🧿 平缓滚动到顶部
+
 ```typescript
 /**
  * @func scrollToTop
@@ -25,8 +31,11 @@
   const stop = scrollToTop()
  */
 ```
+
 ## scrollToView
-🧿平缓滚动到指定元素
+
+🧿 平缓滚动到指定元素
+
 ```typescript
 /**
  * @func scrollToView

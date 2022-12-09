@@ -1,6 +1,9 @@
 # String
+
 ## camelize
+
 驼峰化
+
 ```typescript
 /**
  * @func camelize
@@ -13,8 +16,11 @@
   camelize(hello-world) // 'helloWorld'
  */
 ```
+
 ## hyphenate
+
 连字符化
+
 ```typescript
 /**
  * @func hyphenate
@@ -27,8 +33,11 @@
   hyphenate(helloWorld) // 'hello-world'
  */
 ```
+
 ## trim
+
 删除字符串的空白字符
+
 ```typescript
 /**
  * @func trim
@@ -47,7 +56,9 @@
 ```
 
 ## pwdLevel
+
 密码强度检测
+
 ```typescript
 /**
  * @func pwdLevel
@@ -66,7 +77,9 @@
 ```
 
 ## useJSONParse
-parse一些格式有问题的JSON字符串
+
+parse 一些格式有问题的 JSON 字符串
+
 ```typescript
 /**
  * @func useJSONParse

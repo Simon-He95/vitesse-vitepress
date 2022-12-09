@@ -1,6 +1,9 @@
 # Html
+
 ## escapeHtml
-🧿将字符串转义为HTML实体
+
+🧿 将字符串转义为 HTML 实体
+
 ```typescript
 /**
  * @func escapeHtml
@@ -13,8 +16,11 @@
   escapeHtml('<div>hello world</div>') // &lt;div&gt;hello world&lt;/div&gt;
  */
 ```
+
 ## unescapeHtml
-🧿将HTML实体转义为字符串
+
+🧿 将 HTML 实体转义为字符串
+
 ```typescript
 /**
  * @func unescapeHtml
@@ -27,8 +33,11 @@
   unescapeHtml('&lt;div&gt;hello world&lt;/div&gt;') // <div>hello world</div>
  */
 ```
+
 ## htmlTransform
-🧿html字符串ast遍历函数
+
+🧿html 字符串 ast 遍历函数
+
 ```typescript
 /**
  * @func htmlTransform
@@ -62,7 +71,9 @@
 ```
 
 ## getStyles
-🧿对html中的style内联样式进行处理
+
+🧿 对 html 中的 style 内联样式进行处理
+
 ```typescript
 /**
  * @func getStyles

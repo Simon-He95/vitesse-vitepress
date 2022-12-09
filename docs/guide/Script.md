@@ -1,6 +1,9 @@
 # Script
+
 ## addLink
-🧿创建并添加link标签
+
+🧿 创建并添加 link 标签
+
 ```typescript
 /**
  * @func addLink
@@ -12,8 +15,11 @@
   addLink('https://cdn.bootcdn.net/ajax/libs/normalize/8.0.1/normalize.min.css')
  */
 ```
+
 ## addScript
-🧿创建并添加script标签
+
+🧿 创建并添加 script 标签
+
 ```typescript
 /**
  * @func addScript
@@ -25,8 +31,11 @@
   addScript('http://xxxx.jquery.min.js')
  */
 ```
+
 ## addStyle
-🧿创建并添加style标签
+
+🧿 创建并添加 style 标签
+
 ```typescript
 /**
  * @func addStyle

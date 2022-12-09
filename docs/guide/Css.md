@@ -1,6 +1,9 @@
 # Css
+
 ## getClasses
-🧿从html字符串中获取所有的class，并返回新的html字符串
+
+🧿 从 html 字符串中获取所有的 class，并返回新的 html 字符串
+
 ```typescript
 /**
  * @func getClasses
@@ -24,8 +27,11 @@
   })
  */
 ```
+
 ## getCssVar
-🧿获取元素的css变量值
+
+🧿 获取元素的 css 变量值
+
 ```typescript
 /**
  * @func getCssVar
@@ -43,8 +49,11 @@
   })
  */
 ```
+
 ## hasClassName
-🧿判断元素上是否有某个class
+
+🧿 判断元素上是否有某个 class
+
 ```typescript
 /**
  * @func hasClassName
@@ -59,8 +68,11 @@
   hasClassName(main, 'isDisabled') // true
  */
 ```
+
 ## setCssVar
-🧿设置元素的css变量值
+
+🧿 设置元素的 css 变量值
+
 ```typescript
 /**
  * @func setCssVar
@@ -78,8 +90,11 @@
   })
  */
 ```
+
 ## useNamespace
-🧿根据命名规范，给class添加命名空间
+
+🧿 根据命名规范，给 class 添加命名空间
+
 ```typescript
 /**
  * @func useNamespace
@@ -110,5 +125,4 @@
   const button = namespace('button')
   button.b('primary')// vi-btn-primary
  */
-
 ```

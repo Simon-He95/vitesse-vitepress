@@ -1,7 +1,9 @@
 # Event
 
 ## createElement
-🧿创建元素和属性
+
+🧿 创建元素和属性
+
 ```typescript
 /**
  * @func createElement
@@ -21,7 +23,9 @@
 ```
 
 ## findElement
-🧿查找元素
+
+🧿 查找元素
+
 ```typescript
 /**
  * @func findElement
@@ -41,7 +45,9 @@
 ```
 
 ## insertElement
-🧿插入元素
+
+🧿 插入元素
+
 ```typescript
 /**
  * @func insertElement
@@ -60,7 +66,9 @@
 ```
 
 ## removeElement
-🧿删除元素
+
+🧿 删除元素
+
 ```typescript
 /**
  * @func removeElement
@@ -77,7 +85,9 @@
 ```
 
 ## useElementBounding
-🧿获取元素位置
+
+🧿 获取元素位置
+
 ```typescript
 /**
  * @func useElementBounding
@@ -95,7 +105,9 @@
 ```
 
 ## useIntersectionObserver
-🧿监听元素是否进入视口
+
+🧿 监听元素是否进入视口
+
 ```typescript
 /**
  * @func useIntersectionObserver
@@ -114,7 +126,9 @@
 ```
 
 ## useMutationObserver
-🧿监听元素变化
+
+🧿 监听元素变化
+
 ```typescript
 /**
  * @func useMutationObserver
@@ -133,7 +147,9 @@
 ```
 
 ## useResizeObserver
-🧿监听窗口大小变化
+
+🧿 监听窗口大小变化
+
 ```typescript
 /**
  * @func useResizeObserver
@@ -150,7 +166,9 @@
 ```
 
 ## useWindowScroll
-🧿监听滚动条位置
+
+🧿 监听滚动条位置
+
 ```typescript
 /**
  * @func useWindowScroll
@@ -167,7 +185,9 @@
 ```
 
 ## useInterval
-🧿定时器执行函数
+
+🧿 定时器执行函数
+
 ```typescript
 /**
  * @func useInterval
@@ -192,7 +212,9 @@
 ```
 
 ## useTimeout
-🧿定时器执行函数
+
+🧿 定时器执行函数
+
 ```typescript
 /**
  * @func useTimeout
@@ -211,7 +233,9 @@
 ```
 
 ## useKeyBoard
-🧿监听键盘事件, 执行函数
+
+🧿 监听键盘事件, 执行函数
+
 ```typescript
 /**
  * @func useKeyBoard
@@ -230,7 +254,9 @@
 ```
 
 ## dragEvent
-🧿点击拖拽松开事件封装
+
+🧿 点击拖拽松开事件封装
+
 ```typescript
 /**
  * @func dragEvent
@@ -257,7 +283,9 @@
 ```
 
 ## useEventListener
-🧿给元素添加事件函数
+
+🧿 给元素添加事件函数
+
 ```typescript
 /**
  * @func useEventListener
@@ -283,9 +311,10 @@
  */
 ```
 
-
 ## useMouse
-🧿监听鼠标移动
+
+🧿 监听鼠标移动
+
 ```typescript
 /**
  * @func useMouse
@@ -302,7 +331,9 @@
 ```
 
 ## useClick
-🧿监听鼠标点击事件
+
+🧿 监听鼠标点击事件
+
 ```typescript
 /**
  * @func useClick
@@ -319,7 +350,9 @@
 ```
 
 ## useHover
-🧿监听元素hover事件
+
+🧿 监听元素 hover 事件
+
 ```typescript
 /**
  * @func useHover
@@ -337,7 +370,9 @@
 ```
 
 ## useFocus
-🧿自动聚焦
+
+🧿 自动聚焦
+
 ```typescript
 /**
  * @func useFocus
@@ -355,7 +390,9 @@
 ```
 
 ## download
-🧿下载
+
+🧿 下载
+
 ```typescript
 /**
  * @func download
@@ -371,7 +408,9 @@
 ```
 
 ## collisionDetection
-🧿碰撞检测
+
+🧿 碰撞检测
+
 ```typescript
 /**
  * @func collisionDetection

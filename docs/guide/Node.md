@@ -1,6 +1,9 @@
 # Node
+
 ## getPkgTool
-🧿获取当前项目的包管理工具
+
+🧿 获取当前项目的包管理工具
+
 ```typescript
 /**
  * @func getPkgTool
@@ -11,8 +14,11 @@
   getPkgTool() // 'pnpm'
  */
 ```
+
 ## jsShell
-🧿js调用shell命令
+
+🧿js 调用 shell 命令
+
 ```typescript
 /**
  * @func jsShell
@@ -33,8 +39,11 @@
   }
  */
 ```
+
 ## fileCopy
-🧿拷贝文件夹及其文件
+
+🧿 拷贝文件夹及其文件
+
 ```typescript
 /**
  * @func fileCopy
@@ -54,8 +63,11 @@
   }
  */
 ```
+
 ## transformArgv
-🧿处理命令行参数
+
+🧿 处理命令行参数
+
 ```typescript
 /**
  * @func transformArgv
@@ -68,8 +80,11 @@
   const args = transformArgv() // {minify: true, mode: 'production', type: 'es5'}
  */
 ```
+
 ## getExportBundle
-🧿返回npm打包文件
+
+🧿 返回 npm 打包文件
+
 ```typescript
 /**
 * @func getExportBundle
@@ -81,8 +96,11 @@
   console.log(getExportBundle('vitest')) // 读取node_modules/vitest/package.json的module字段如果没有才会读取main字段, 返回打包文件的内容
 */
 ```
+
 ## getPkg
-🧿获取package.json的Object 对象
+
+🧿 获取 package.json 的 Object 对象
+
 ```typescript
 /**
  * @func getPkg
@@ -97,8 +115,11 @@
   const pkg2 = await getPkg('../playground/package.json') // 获取playground/package.json
 */
 ```
+
 ## writeFile
-🧿快速修改文件内容,支持多个文件同时修改
+
+🧿 快速修改文件内容,支持多个文件同时修改
+
 ```typescript
 /**
  * @func writeFile
@@ -115,8 +136,11 @@
   })
  */
 ```
+
 ## withTaskName
-🧿针对gulpfile.js中的task添加名称
+
+🧿 针对 gulpfile.js 中的 task 添加名称
+
 ```typescript
 /**
  * @func withTaskName
@@ -136,7 +160,9 @@
 ```
 
 ## useNodeWorker
-🧿使用node worker 父进程
+
+🧿 使用 node worker 父进程
+
 ```typescript
 /**
  * @func useNodeWorker
@@ -152,7 +178,9 @@
 ```
 
 ## useProcressNodeWorker
-🧿使用node worker 子进程
+
+🧿 使用 node worker 子进程
+
 ```typescript
 /**
  * @func useProcressNodeWorker

@@ -1,6 +1,9 @@
 # Is
+
 ## isRelative
-🧿判断是否是相对路径
+
+🧿 判断是否是相对路径
+
 ```typescript
 /**
  * @func isReg
@@ -9,12 +12,14 @@
  * @desc 📝 判断是否是相对路径
  * @example
   import { isRelative } from 'lazy-js-utils'
-  
+
   isRelative('../index.md') // true
 ```
 
 ## isAbsolute
-🧿判断是否为绝对路径
+
+🧿 判断是否为绝对路径
+
 ```typescript
 /**
  * @func isAbsolute
@@ -27,8 +32,11 @@
   isAbsolute('/foo/bar') // true
  */
 ```
+
 ## isArray
-🧿判断是否为数组
+
+🧿 判断是否为数组
+
 ```typescript
 /**
  * @func isArray
@@ -40,8 +48,11 @@
   isArray([1, 2, 3]) // true
  */
 ```
+
 ## isBlob
-🧿判断是否为Blob对象
+
+🧿 判断是否为 Blob 对象
+
 ```typescript
 /**
  * @func isBlob
@@ -54,8 +65,11 @@
   isBlob(new Blob()) // true
  */
 ```
+
 ## isBool
-🧿判断是否为布尔值
+
+🧿 判断是否为布尔值
+
 ```typescript
 /**
  * @func isBool
@@ -64,11 +78,14 @@
  * @desc 📝 判断是否为布尔值
  * @example
   import { isBool } from 'lazy-js-utils'
-  
+
   isBool(true) // true
 ```
+
 ## isBottom
-🧿判断是否为浏览器底部
+
+🧿 判断是否为浏览器底部
+
 ```typescript
 /**
  * @func isBottom
@@ -77,12 +94,15 @@
  * @desc 📝 判断是否为浏览器底部
  * @example
   import { isBottom } from 'lazy-js-utils'
-  
+
   isBottom() // true or false 是否触底
   isBottom(100) // true or false 是否到达底部100px的距离
 ```
+
 ## isBrowser
-🧿判断是否为浏览器环境
+
+🧿 判断是否为浏览器环境
+
 ```typescript
 /**
  * @func isBool
@@ -90,12 +110,14 @@
  * @desc 📝 判断是否为浏览器环境
  * @example
   import { isBrowser } from 'lazy-js-utils'
-  
+
   isBrowser() // true | false
 ```
 
 ## isContainCn
-🧿判断字符串中是否含有中文
+
+🧿 判断字符串中是否含有中文
+
 ```typescript
 /**
  * @func isContainCn
@@ -104,13 +126,15 @@
  * @desc 📝 判断字符串中是否含有中文
  * @example
   import { isContainCn } from 'lazy-js-utils'
-  
+
   isContainCn('hello world') // false
   isContainCn('你好，世界') // true
 ```
 
 ## isDate
-🧿判断是否为日期对象
+
+🧿 判断是否为日期对象
+
 ```typescript
 /**
  * @func isDate
@@ -119,12 +143,14 @@
  * @desc 📝 判断字符串中是否含有中文
  * @example
   import { isDate } from 'lazy-js-utils'
-  
+
   isDate(new Date()) // true
 ```
 
 ## isDef
-🧿判断是否不为undefined
+
+🧿 判断是否不为 undefined
+
 ```typescript
 /**
  * @func isDef
@@ -133,12 +159,14 @@
  * @desc 📝 判断字符串中是否含有中文
  * @example
   import { isDef } from 'lazy-js-utils'
-  
+
   isDef(undefined) // false
 ```
 
 ## isUndef
-🧿判断是否为undefined
+
+🧿 判断是否为 undefined
+
 ```typescript
 /**
  * @func isUndef
@@ -147,12 +175,14 @@
  * @desc 📝 判断是否为undefined
  * @example
   import { isUndef } from 'lazy-js-utils'
-  
+
   isDef(undefined) // true
 ```
 
 ## isElement
-🧿判断是否为DOM元素
+
+🧿 判断是否为 DOM 元素
+
 ```typescript
 /**
  * @func isElement
@@ -161,12 +191,14 @@
  * @desc 📝 判断是否为DOM元素
  * @example
   import { isElement } from 'lazy-js-utils'
-  
+
   isElement(document.body) // true
 ```
 
 ## isEmail
-🧿判断是否为邮箱
+
+🧿 判断是否为邮箱
+
 ```typescript
 /**
  * @func isEmail
@@ -175,12 +207,14 @@
  * @desc 📝 判断是否为邮箱
  * @example
   import { isEmail } from 'lazy-js-utils'
-  
+
   isEmail('https://github.com') // false
 ```
 
 ## isEqual
-🧿判断是否相等
+
+🧿 判断是否相等
+
 ```typescript
 /**
  * @func isEqual
@@ -190,14 +224,16 @@
  * @desc 📝 判断是否相等
  * @example
   import { isEqual } from 'lazy-js-utils'
-  
+
   isEqual(1, 1) // true
   isEqual(1, 2) // false
   isEqual([1, 2], [1, 2]) // true
 ```
 
 ## isEsModule
-🧿判断是否为ES模块
+
+🧿 判断是否为 ES 模块
+
 ```typescript
 /**
  * @func isEsModule
@@ -206,12 +242,14 @@
  * @desc 📝 判断是否为ES模块
  * @example
   import { isEsModule } from 'lazy-js-utils'
-  
+
   isEsModule({}) // false
 ```
 
 ## isExist
-🧿判断路径是否存在
+
+🧿 判断路径是否存在
+
 ```typescript
 /**
  * @func isExist
@@ -220,12 +258,14 @@
  * @desc 📝 判断路径是否存在
  * @example
   import { isExist } from 'lazy-js-utils'
-  
+
   isExist('./package.json') // true
 ```
 
 ## isFalse
-🧿判断是否是false
+
+🧿 判断是否是 false
+
 ```typescript
 /**
  * @func isFalse
@@ -234,12 +274,14 @@
  * @desc 📝 判断是否是false
  * @example
   import { isFalse } from 'lazy-js-utils'
-  
+
   isFalse(false) // true
 ```
 
 ## isTrue
-🧿判断是否是true
+
+🧿 判断是否是 true
+
 ```typescript
 /**
  * @func isTrue
@@ -248,12 +290,14 @@
  * @desc 📝 判断是否是true
  * @example
   import { isTrue } from 'lazy-js-utils'
-  
+
   isTrue(true) // true
 ```
 
 ## isFile
-🧿判断是否是文件
+
+🧿 判断是否是文件
+
 ```typescript
 /**
  * @func isFile
@@ -262,12 +306,14 @@
  * @desc 📝 判断是否是文件
  * @example
   import { isFile } from 'lazy-js-utils'
-  
+
   isFile('./package.json') // true
 ```
 
 ## isFileType
-🧿判断文件类型
+
+🧿 判断文件类型
+
 ```typescript
 /**
  * @func isFileType
@@ -276,12 +322,14 @@
  * @desc 📝 判断文件类型
  * @example
   import { isFileType } from 'lazy-js-utils'
-  
+
   // const isCss = isFileType('./useEventListener.css', 'css') // true
 ```
 
 ## isFn
-🧿判断是否是函数
+
+🧿 判断是否是函数
+
 ```typescript
 /**
  * @func isFn
@@ -290,12 +338,14 @@
  * @desc 📝 判断是否是函数
  * @example
   import { isFn } from 'lazy-js-utils'
-  
+
   isFn(() => {}) // true
 ```
 
 ## isGo
-🧿判断当前环境是否是go
+
+🧿 判断当前环境是否是 go
+
 ```typescript
 /**
  * @func isGo
@@ -304,12 +354,14 @@
  * @desc 📝 判断是否是函数
  * @example
   import { isGo } from 'lazy-js-utils'
-  
+
   isGo() // false
 ```
 
 ## isRust
-🧿判断当前环境是否是rust
+
+🧿 判断当前环境是否是 rust
+
 ```typescript
 /**
  * @func isRust
@@ -318,12 +370,14 @@
  * @desc 📝 判断当前环境是否是rust
  * @example
   import { isRust } from 'lazy-js-utils'
-  
+
   isRust() // false
 ```
 
 ## isIdCard
-🧿判断是否是身份证
+
+🧿 判断是否是身份证
+
 ```typescript
 /**
  * @func isIdCard
@@ -332,12 +386,14 @@
  * @desc 📝 判断是否是身份证
  * @example
   import { isIdCard } from 'lazy-js-utils'
-  
+
   isIdCard('asss') // false
 ```
 
 ## isIPv4
-🧿判断是否是IPv4
+
+🧿 判断是否是 IPv4
+
 ```typescript
 /**
  * @func isIPv4
@@ -346,12 +402,14 @@
  * @desc 📝 判断是否是IPv4
  * @example
   import { isIPv4 } from 'lazy-js-utils'
-  
+
   isIPv4('xxx') // false
 ```
 
 ## isIPv6
-🧿判断是否是IPv6
+
+🧿 判断是否是 IPv6
+
 ```typescript
 /**
  * @func isIPv6
@@ -360,12 +418,14 @@
  * @desc 📝 判断是否是IPv6
  * @example
   import { isIPv6 } from 'lazy-js-utils'
-  
+
   isIPv6('xxx') // false
 ```
 
 ## isLeapYear
-🧿判断某一年是否是闰年
+
+🧿 判断某一年是否是闰年
+
 ```typescript
 /**
  * @func isLeapYear
@@ -374,12 +434,14 @@
  * @desc 📝 判断某一年是否是闰年
  * @example
   import { isLeapYear } from 'lazy-js-utils'
-  
+
   isLeapYear(2020) // true
 ```
 
 ## isMap
-🧿判断是否是Map
+
+🧿 判断是否是 Map
+
 ```typescript
 /**
  * @func isMap
@@ -388,12 +450,14 @@
  * @desc 📝 判断是否是Map
  * @example
   import { isMap } from 'lazy-js-utils'
-  
+
   isMap(new Map) // true
 ```
 
 ## isMobile
-🧿判断是否是手机号
+
+🧿 判断是否是手机号
+
 ```typescript
 /**
  * @func isisMobileMap
@@ -402,12 +466,14 @@
  * @desc 📝 判断是否是手机号
  * @example
   import { isMobile } from 'lazy-js-utils'
-  
+
   isMobile('13122211332') // true
 ```
 
 ## isNaN
-🧿判断是否是NaN
+
+🧿 判断是否是 NaN
+
 ```typescript
 /**
  * @func isNaN
@@ -416,12 +482,14 @@
  * @desc 📝 判断是否是NaN
  * @example
   import { isNaN } from 'lazy-js-utils'
-  
+
   isNaN(NaN) // true
 ```
 
 ## isNil
-🧿判断是否是null或者undefined
+
+🧿 判断是否是 null 或者 undefined
+
 ```typescript
 /**
  * @func isNil
@@ -430,12 +498,14 @@
  * @desc 📝 判断是否是null或者undefined
  * @example
   import { isNil } from 'lazy-js-utils'
-  
+
   isNil(null) // true
 ```
 
 ## isNull
-🧿判断是否是null
+
+🧿 判断是否是 null
+
 ```typescript
 /**
  * @func isNull
@@ -444,12 +514,14 @@
  * @desc 📝 判断是否是null
  * @example
   import { isNull } from 'lazy-js-utils'
-  
+
   isNull(null) // true
 ```
 
 ## isNum
-🧿判断是否是数字
+
+🧿 判断是否是数字
+
 ```typescript
 /**
  * @func isNum
@@ -458,12 +530,14 @@
  * @desc 📝 判断是否是数字
  * @example
   import { isNum } from 'lazy-js-utils'
-  
+
   isNum(1) // true
 ```
 
 ## isObject
-🧿判断是否是对象
+
+🧿 判断是否是对象
+
 ```typescript
 /**
  * @func isObject
@@ -472,13 +546,15 @@
  * @desc 📝 判断是否是对象
  * @example
   import { isObject } from 'lazy-js-utils'
-  
+
   isObject({}) // true
   isObject([]) // true
 ```
 
 ## isPlainObject
-🧿判断是否是{}
+
+🧿 判断是否是{}
+
 ```typescript
 /**
  * @func isPlainObject
@@ -487,13 +563,15 @@
  * @desc 📝 判断是否是{}
  * @example
   import { isPlainObject } from 'lazy-js-utils'
-  
+
   isPlainObject({}) // true
   isObject([]) // false
 ```
 
 ## isPkg
-🧿判断是否是路径下是否有package.json
+
+🧿 判断是否是路径下是否有 package.json
+
 ```typescript
 /**
  * @func isPkg
@@ -502,12 +580,14 @@
  * @desc 📝 判断是否是路径下是否有package.json
  * @example
   import { isPkg } from 'lazy-js-utils'
-  
+
   isPkg() // true
 ```
 
 ## isPostCode
-🧿判断是否是邮编
+
+🧿 判断是否是邮编
+
 ```typescript
 /**
  * @func isPostCode
@@ -516,12 +596,14 @@
  * @desc 📝 判断是否是邮编.json
  * @example
   import { isPostCode } from 'lazy-js-utils'
-  
+
   isPostCode(200512) // true
 ```
 
 ## isPromise
-🧿判断是否是Promise
+
+🧿 判断是否是 Promise
+
 ```typescript
 /**
  * @func isPromise
@@ -530,12 +612,14 @@
  * @desc 📝 判断是否是Promise
  * @example
   import { isPromise } from 'lazy-js-utils'
-  
+
   isPromise(new Promise()) // true
 ```
 
 ## isPromise
-🧿判断是否是Promise
+
+🧿 判断是否是 Promise
+
 ```typescript
 /**
  * @func isPromise
@@ -544,12 +628,14 @@
  * @desc 📝 判断是否是Promise
  * @example
   import { isPromise } from 'lazy-js-utils'
-  
+
   isPromise(new Promise()) // true
 ```
 
 ## isNm
-🧿判断是否是nodemodules依赖
+
+🧿 判断是否是 nodemodules 依赖
+
 ```typescript
 /**
  * @func isNm
@@ -558,12 +644,14 @@
  * @desc 📝 判断是否是nodemodules依赖
  * @example
   import { isNm } from 'lazy-js-utils'
-  
+
   isNm('lazy-js-utils') // true
 ```
 
 ## isReg
-🧿判断是否是正则
+
+🧿 判断是否是正则
+
 ```typescript
 /**
  * @func isReg
@@ -572,12 +660,14 @@
  * @desc 📝 判断是否是正则
  * @example
   import { isReg } from 'lazy-js-utils'
-  
+
   isReg(/a/) // true
 ```
 
 ## isSameDay
-🧿判断是否是同一天
+
+🧿 判断是否是同一天
+
 ```typescript
 /**
  * @func isSameDay
@@ -587,12 +677,14 @@
  * @desc 📝 判断是否是同一天
  * @example
   import { isSameDay } from 'lazy-js-utils'
-  
+
   isSameDay(new Date(), new Date()) // true
 ```
 
 ## isSet
-🧿判断是否是Set
+
+🧿 判断是否是 Set
+
 ```typescript
 /**
  * @func isSet
@@ -601,12 +693,14 @@
  * @desc 📝 判断是否是Set
  * @example
   import { isSet } from 'lazy-js-utils'
-  
+
   isSet(new Set) // true
 ```
 
 ## isStr
-🧿判断是否是字符串
+
+🧿 判断是否是字符串
+
 ```typescript
 /**
  * @func isStr
@@ -615,12 +709,14 @@
  * @desc 📝 判断是否是字符串
  * @example
   import { isStr } from 'lazy-js-utils'
-  
+
   isStr('hi') // true
 ```
 
 ## isSupportCamera
-🧿判断是否支持摄像头
+
+🧿 判断是否支持摄像头
+
 ```typescript
 /**
  * @func isSupportCamera
@@ -628,12 +724,14 @@
  * @desc 📝 判断是否支持摄像头
  * @example
   import { isSupportCamera } from 'lazy-js-utils'
-  
+
   isSupportCamera() // true
 ```
 
 ## isSupportWebp
-🧿判断是否支持webp
+
+🧿 判断是否支持 webp
+
 ```typescript
 /**
  * @func isSupportWebp
@@ -641,12 +739,14 @@
  * @desc 📝 判断是否支持摄像头
  * @example
   import { isSupportWebp } from 'lazy-js-utils'
-  
+
   isSupportWebp() // true
 ```
 
 ## isSymbol
-🧿判断是否是Symbol
+
+🧿 判断是否是 Symbol
+
 ```typescript
 /**
  * @func isSymbol
@@ -655,12 +755,14 @@
  * @desc 📝 判断是否是Symbol
  * @example
   import { isSymbol } from 'lazy-js-utils'
-  
+
   isSymbol(symbol('xx')) // true
 ```
 
 ## isType
-🧿判断是否是???类型
+
+🧿 判断是否是???类型
+
 ```typescript
 /**
  * @func isType
@@ -669,13 +771,15 @@
  * @desc 📝 判断是否是???类型
  * @example
   import { isType } from 'lazy-js-utils'
-  
+
   // 判断是否是对象{}或者number类型
   isType({},'o|n') // true
 ```
 
 ## isUrl
-🧿判断是否是url
+
+🧿 判断是否是 url
+
 ```typescript
 /**
  * @func isUrl
@@ -684,12 +788,14 @@
  * @desc 📝 判断是否是url
  * @example
   import { isUrl } from 'lazy-js-utils'
-  
+
   isUrl('http://www.baidu.com') // true
 ```
 
 ## isVideo
-🧿判断是否是视频
+
+🧿 判断是否是视频
+
 ```typescript
 /**
  * @func isVideo
@@ -698,12 +804,14 @@
  * @desc 📝 判断是否是视频
  * @example
   import { isVideo } from 'lazy-js-utils'
-  
+
   isVideo('../xxx.mp4') // true
 ```
 
 ## isWeakMap
-🧿判断是否是WeakMap
+
+🧿 判断是否是 WeakMap
+
 ```typescript
 /**
  * @func isWeakMap
@@ -712,12 +820,14 @@
  * @desc 📝 判断是否是WeakMap
  * @example
   import { isWeakMap } from 'lazy-js-utils'
-  
+
   isWeakMap(new WeakMap()) // true
 ```
 
 ## isWeakSet
-🧿判断是否是WeakSet
+
+🧿 判断是否是 WeakSet
+
 ```typescript
 /**
  * @func isWeakSet
@@ -726,12 +836,14 @@
  * @desc 📝 判断是否是WeakSet
  * @example
   import { isWeakSet } from 'lazy-js-utils'
-  
+
   isWeakSet(new WeakSet()) // true
 ```
 
 ## isWin
-🧿判断是否是windows
+
+🧿 判断是否是 windows
+
 ```typescript
 /**
  * @func isWin
@@ -740,6 +852,6 @@
  * @desc 📝 判断是否是windows
  * @example
   import { isWin } from 'lazy-js-utils'
-  
+
   isWin() // false
 ```

@@ -1,6 +1,9 @@
 # Monitor
+
 ## getDevice
-🧿获取系统信息
+
+🧿 获取系统信息
+
 ```typescript
 /**
  * @func getDevice
@@ -12,8 +15,11 @@
   console.log(getDevice()) // { os: 'android', dev: 'chrome' }
  */
 ```
+
 ## getLocation
-🧿基于promise封装的获取地理位置信息
+
+🧿 基于 promise 封装的获取地理位置信息
+
 ```typescript
 /**
  * @func getLocation
@@ -41,7 +47,9 @@
 ```
 
 ## calFps
-🧿计算FPS
+
+🧿 计算 FPS
+
 ```typescript
 /**
  * @func calFps
@@ -56,7 +64,9 @@
 ```
 
 ## monitorPef
-🧿数字化浏览器性能指标
+
+🧿 数字化浏览器性能指标
+
 ```typescript
 /**
  * @func monitorPef
@@ -83,7 +93,9 @@
 ```
 
 ## timeCost
-🧿计算函数执行时间
+
+🧿 计算函数执行时间
+
 ```typescript
 /**
  * @func timeCost

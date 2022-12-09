@@ -1,8 +1,11 @@
 # Perf
+
 ## useRequestIdleCallback
-- 包裹了requestIdleCallback和cancelIdleCallback的一个封装函数
+
+- 包裹了 requestIdleCallback 和 cancelIdleCallback 的一个封装函数
 - 兼容了浏览器的不同版本
 - 简化了调用方式
+
 ```typescript
 /**
  * @func useRequestIdleCallback
@@ -51,10 +54,13 @@
   const stop = useRequestIdleCallback(tasks, 1000)
  */
 ```
+
 ## useAnimationFrame
-- 包裹了requestAnimationFrame和cancelAnimationFrame的封装函数
+
+- 包裹了 requestAnimationFrame 和 cancelAnimationFrame 的封装函数
 - 兼容了浏览器的不同版本
 - 简化了调用方式
+
 ```typescript
 /**
  * @func useAnimationFrame
@@ -94,8 +100,11 @@
   }，1000)
  */
 ```
+
 ## fileSplice
+
 大文件切片处理函数
+
 ```typescript
 /**
  * @func fileSplice
@@ -112,7 +121,9 @@
 ```
 
 ## memorizeFn
+
 根据参数返回一个能缓存结果的函数
+
 ```typescript
 /**
  * @func memorizeFn
@@ -131,7 +142,9 @@
 ```
 
 ## debounce
+
 函数防抖
+
 ```typescript
 /**
  * @func debounce
@@ -147,8 +160,11 @@
 }, 1000)
  */
 ```
+
 ## throttle
+
 函数节流
+
 ```typescript
 /**
  * @func throttle
@@ -164,8 +180,11 @@
   }, 1000)
  */
 ```
+
 ## preload
+
 预加载图片或视频
+
 ```typescript
 /**
  * @func preload
@@ -183,8 +202,11 @@
   preload(imageAssets) 
  */
 ```
+
 ## lazyLoad
+
 自动懒加载图片或视频
+
 ```typescript
 /**
  * @func lazyLoad
@@ -199,8 +221,11 @@
   lazyLoad(document.getElementById('app'))
 */
 ```
+
 ## once
+
 只执行一次的函数
+
 ```typescript
 /**
  * @func once
@@ -217,8 +242,11 @@
   document.click() // 
  */
 ```
+
 ## getLru
+
 删除最近最少使用的缓存
+
 ```typescript
 /**
  * @func getLru

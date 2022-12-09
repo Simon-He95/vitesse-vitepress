@@ -2,10 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "lib": [
-      "esnext",
-      "DOM"
-    ],
+    "lib": ["esnext", "DOM"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
@@ -15,9 +12,5 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true
   },
-  "exclude": [
-    "dist",
-    "playground",
-    "cypress"
-  ]
+  "exclude": ["dist", "playground", "cypress"]
 }

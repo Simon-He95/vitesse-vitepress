@@ -1,6 +1,9 @@
 # Storage
+
 ## dbStorage
-🧿浏览器大数据存储
+
+🧿 浏览器大数据存储
+
 ```typescript
 /**
  * @func dbStorage
@@ -21,8 +24,11 @@
   remove('key') // 删除数据 key: string | number
  */
 ```
+
 ## jsSession
-🧿操作sessionStorage
+
+🧿 操作 sessionStorage
+
 ```typescript
 /**
  * @func jsSession
@@ -49,8 +55,11 @@
   delete('key') // 删除数据 
  */
 ```
+
 ## jsCookie
-🧿操作cookie
+
+🧿 操作 cookie
+
 ```typescript
 /**
  * @func jsCookie
@@ -73,7 +82,9 @@
 ```
 
 ## jsLocal
-🧿操作localStorage
+
+🧿 操作 localStorage
+
 ```typescript
 /**
  * @func jsLocal

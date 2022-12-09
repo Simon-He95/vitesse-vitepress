@@ -1,7 +1,9 @@
 # Log
 
 ## interceptError
-🧿异常拦截
+
+🧿 异常拦截
+
 ```typescript
 /**
  * @func interceptError
@@ -17,7 +19,9 @@
 ```
 
 ## globalErrorCapture
-🧿全局异常捕获
+
+🧿 全局异常捕获
+
 ```typescript
 /**
  * @func globalErrorCapture
@@ -30,7 +34,9 @@
 ```
 
 ## log
-🧿突出日志打印
+
+🧿 突出日志打印
+
 ```typescript
 /**
  * @func log
@@ -50,7 +56,9 @@
 ```
 
 ## debugWarn
-🧿自定义的警告输出
+
+🧿 自定义的警告输出
+
 ```typescript
 /**
  * @func debugWarn

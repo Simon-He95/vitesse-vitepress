@@ -1,6 +1,9 @@
 # Canvas
+
 ## sliderValidation
-🧿滑块验证功能
+
+🧿 滑块验证功能
+
 ```typescript
 /**
  * @Class sliderValidation
@@ -18,7 +21,9 @@
 ```
 
 ## Canvas
-🧿快速拿到canvas和ctx
+
+🧿 快速拿到 canvas 和 ctx
+
 ```typescript
 /**
  * @Class Canvas
@@ -34,7 +39,9 @@
 ```
 
 ## getImageData
-🧿快速获取canvas的imageData
+
+🧿 快速获取 canvas 的 imageData
+
 ```typescript
 /**
  * @Class getImageData
@@ -49,7 +56,9 @@
 ```
 
 ## CreateSignatureCanvas
+
 🧿CreateSignatureCanvas
+
 ```typescript
 /**
  * @Class CreateSignatureCanvas
@@ -70,7 +79,9 @@
 ```
 
 ## DotImageCanvas
-🧿将图片的像素转为点阵图片
+
+🧿 将图片的像素转为点阵图片
+
 ```typescript
 /**
  * @Class DotImageCanvas
@@ -93,7 +104,9 @@
 ```
 
 ## DotTextCanvas
-🧿根据文字返回一个点阵的canvas
+
+🧿 根据文字返回一个点阵的 canvas
+
 ```typescript
 /**
  * @Class DotTextCanvas
@@ -113,7 +126,9 @@
 ```
 
 ## removeRoundSpace
-🧿删除二维数组周围为0的长度，一般用于图片或者canvas的处理
+
+🧿 删除二维数组周围为 0 的长度，一般用于图片或者 canvas 的处理
+
 ```typescript
 /**
  * @Class removeRoundSpace

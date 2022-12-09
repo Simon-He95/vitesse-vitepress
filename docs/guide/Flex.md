@@ -1,6 +1,9 @@
 # Flex
+
 ## waterfall
-🧿生成一个瀑布流布局
+
+🧿 生成一个瀑布流布局
+
 ```typescript
 /**
  * @func waterfall

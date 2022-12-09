@@ -1,6 +1,9 @@
 # Speak
+
 ## speech
-🧿文字转语音
+
+🧿 文字转语音
+
 ```typescript
 /**
  * @func speech
@@ -28,3 +31,4 @@
   const {speak,cancel,resume,pause} = speech('你好')
   speak()
  */
+```

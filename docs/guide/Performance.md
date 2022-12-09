@@ -1,6 +1,9 @@
 # Performance
+
 ## monitorPef
-🧿数字化浏览器性能指标
+
+🧿 数字化浏览器性能指标
+
 ```typescript
 /**
  * @func monitorPef

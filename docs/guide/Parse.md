@@ -1,6 +1,9 @@
 # Parse
+
 ## parse
-🧿字符串转换为对象
+
+🧿 字符串转换为对象
+
 ```typescript
 /**
  * @func parse
@@ -20,8 +23,11 @@
   parse(str) // { a: { data: 'nihao', age: '17' } }
  */
 ```
+
 ## parseCss
-🧿解析html中的css, 返回所有的class和对应的css对象
+
+🧿 解析 html 中的 css, 返回所有的 class 和对应的 css 对象
+
 ```typescript
 /**
  * @func parseCss
@@ -59,7 +65,9 @@
 ```
 
 ## parseURL
-🧿解析url
+
+🧿 解析 url
+
 ```typescript
 /**
  * @func parseUrl
@@ -95,7 +103,9 @@
 ```
 
 ## mapTransform
-🧿将对象中的key根据映射关系转换成新的对象
+
+🧿 将对象中的 key 根据映射关系转换成新的对象
+
 ```typescript
 /**
  * @func mapTransform
@@ -124,7 +134,9 @@
 ```
 
 ## stringify
-🧿将对象转换为字符串
+
+🧿 将对象转换为字符串
+
 ```typescript
 /**
  * @func stringify
@@ -155,7 +167,9 @@
 ```
 
 ## transformKey
-🧿将对象中的key修改为指定的key
+
+🧿 将对象中的 key 修改为指定的 key
+
 ```typescript
 /**
  * @func transformKey
@@ -177,7 +191,9 @@
 ```
 
 ## traverse
-🧿数组或者对象的遍历
+
+🧿 数组或者对象的遍历
+
 ```typescript
 /**
  * @func traverse

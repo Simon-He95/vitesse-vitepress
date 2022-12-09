@@ -24,5 +24,4 @@ features:
     details: 包含node、js、css、html和vitePlugin等等, 因为是纯js，所以可在vue、react、svelte等等框架中使用，支持移动端和pc端
   - title: Highlight
     details: 可以直接在框架中调用不依赖于运行的hooks,并且副作用函数会被自动销毁
-   
 ---

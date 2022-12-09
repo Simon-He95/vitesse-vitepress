@@ -1,6 +1,9 @@
 # Common
+
 ## hasOwn
-🧿判断对象是否有某个属性
+
+🧿 判断对象是否有某个属性
+
 ```typescript
 /**
  * @func hasOwn
@@ -20,7 +23,9 @@
 ```
 
 ## EXPORT_DEFAULT_RE
-🧿正则匹配export default
+
+🧿 正则匹配 export default
+
 ```typescript
 /**
  * @func EXPORT_DEFAULT_RE
@@ -34,7 +39,9 @@
 ```
 
 ## DYNAMIC_IMPORT_RE
-🧿正则匹配动态import
+
+🧿 正则匹配动态 import
+
 ```typescript
 /**
  * @func DYNAMIC_IMPORT_RE
@@ -48,7 +55,9 @@
 ```
 
 ## EXPORT_DECAL_RE
-🧿正则匹配export
+
+🧿 正则匹配 export
+
 ```typescript
 /**
  * @func EXPORT_DECAL_RE
@@ -62,7 +71,9 @@
 ```
 
 ## EXPORT_NAMED_RE
-🧿正则匹配export
+
+🧿 正则匹配 export
+
 ```typescript
 /**
  * @func EXPORT_NAMED_RE
@@ -76,7 +87,9 @@
 ```
 
 ## EXPORT_STAR_RE
-🧿正则匹配export
+
+🧿 正则匹配 export
+
 ```typescript
 /**
  * @func EXPORT_STAR_RE
@@ -90,7 +103,9 @@
 ```
 
 ## EXPORT_DEFAULT_RE
-🧿正则匹配export default
+
+🧿 正则匹配 export default
+
 ```typescript
 /**
  * @func EXPORT_DEFAULT_RE

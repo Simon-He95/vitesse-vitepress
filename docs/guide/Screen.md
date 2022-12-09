@@ -1,6 +1,9 @@
 # Screen
+
 ## useCamera
-🧿调用摄像头
+
+🧿 调用摄像头
+
 ```typescript
 /**
  * @func useCamera
@@ -25,8 +28,11 @@
   )
  */
 ```
+
 ## useShare
-🧿通过调用本机的共享机制作为 Web Share API 的一部分。
+
+🧿 通过调用本机的共享机制作为 Web Share API 的一部分。
+
 ```typescript
 /**
  * @func useShare
@@ -46,8 +52,11 @@
   })
  */
 ```
+
 ## useVideo
-🧿video的封装
+
+🧿video 的封装
+
 ```typescript
 /**
 * @func useVideo
@@ -104,7 +113,9 @@
 ```
 
 ## picInPic
-🧿给video开启画中画模式
+
+🧿 给 video 开启画中画模式
+
 ```typescript
 /**
  * @func picInPic
@@ -120,7 +131,9 @@
 ```
 
 ## shareScreen
-🧿浏览器屏幕分享
+
+🧿 浏览器屏幕分享
+
 ```typescript
 /**
  * @func shareScreen
@@ -137,9 +150,10 @@
  */
 ```
 
-
 ## fullScreen
-🧿浏览器全屏
+
+🧿 浏览器全屏
+
 ```typescript
 /**
  * @func fullScreen
@@ -151,8 +165,11 @@
   fullScreen()
  */
 ```
+
 ## exitFullScreen
-🧿退出浏览器全屏
+
+🧿 退出浏览器全屏
+
 ```typescript
 /**
  * @func exitFullScreen

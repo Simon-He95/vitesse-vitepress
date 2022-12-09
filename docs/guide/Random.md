@@ -1,6 +1,9 @@
 # Random
+
 ## randomRgb
-🧿随机生成RGB颜色
+
+🧿 随机生成 RGB 颜色
+
 ```typescript
 /**
  * @func randomRgb
@@ -12,8 +15,11 @@
   console.log(randomRgb())// 'rgb(255,0,0)'
  */
 ```
+
 ## randomHexColor
-🧿随机生成十六进制颜色
+
+🧿 随机生成十六进制颜色
+
 ```typescript
 /**
  * @func randomHexColor
@@ -25,8 +31,11 @@
   console.log(randomHexColor()) // '#ff0000'
  */
 ```
+
 ## randomDate
-🧿随机生成日期
+
+🧿 随机生成日期
+
 ```typescript
 /**
  * @func randomDate
@@ -40,8 +49,11 @@
   console.log(randomDate('1999/01/01')) // Mon Jun 06 2011 15:11:37 GMT+0800 (中国标准时间) 可再通过formateDate转换为其他格式 如'yyyy-MM-dd'
  */
 ```
+
 ## uuid
-🧿生成uuid
+
+🧿 生成 uuid
+
 ```typescript
 /**
  * @func uuid
@@ -59,7 +71,9 @@
 ```
 
 ## randomRange
-🧿生成在范围内的随机数
+
+🧿 生成在范围内的随机数
+
 ```typescript
 /**
  * @func randomRange

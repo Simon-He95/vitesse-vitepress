@@ -1,6 +1,9 @@
 # Compress
+
 ## compressCss
-🧿css压缩
+
+🧿css 压缩
+
 ```typescript
 /**
  * @func compressCss
@@ -20,8 +23,11 @@
   compressCss(css) // .test{width:100px;height:100px;background:red}
  */
 ```
+
 ## compressImage
-🧿利用canvas图片质量调整压缩,并输出指定类型
+
+🧿 利用 canvas 图片质量调整压缩,并输出指定类型
+
 ```typescript
 /**
  * @func compressImage

@@ -1,7 +1,9 @@
 # Message
 
-## createEventBus    
-🧿创建一个事件总线, 用于事件的发布和订阅
+## createEventBus
+
+🧿 创建一个事件总线, 用于事件的发布和订阅
+
 ```typescript
 /**
  * @func createEventBus    
@@ -25,8 +27,11 @@
   bus.emit('test','hi')
  */
 ```
-## useStorageListen    
-🧿新开页, 监听storage的变化
+
+## useStorageListen
+
+🧿 新开页, 监听 storage 的变化
+
 ```typescript
 /**
  * @func useStorageListen    
@@ -49,4 +54,3 @@
   })
  */
 ```
-
