@@ -1,6 +1,6 @@
 # Perf
 
-## useRequestIdleCallback
+## useRic
 
 - 包裹了 requestIdleCallback 和 cancelIdleCallback 的一个封装函数
 - 兼容了浏览器的不同版本
@@ -8,16 +8,16 @@
 
 ```typescript
 /**
- * @func useRequestIdleCallback
+ * @func useRic
  * @desc 📝 打印
  * @param { Function[] } tasks 待执行的任务数组
  * @param { number } timeout 超时时间(单位:毫秒)
  * @param { () => void } callback 执行完成后的回调函数
  * @return { () => void } 停止函数
  * @example
-  import { useRequestIdleCallback } from 'lazy-js-utils'
+  import { useRic } from 'lazy-js-utils'
 
-  // useRequestIdleCallback(tasks,()=>{console.log('end')}) // 默认第二个参数为2000的简写
+  // useRic(tasks,()=>{console.log('end')}) // 默认第二个参数为2000的简写
   const tasks: Function[] = [
     () => {
       for (let i = 0; i < 3000; i++) {
@@ -51,11 +51,11 @@
   }
 
   // 封装后的场景 更加简短方便
-  const stop = useRequestIdleCallback(tasks, 1000)
+  const stop = useRic(tasks, 1000)
  */
 ```
 
-## useAnimationFrame
+## useRaf
 
 - 包裹了 requestAnimationFrame 和 cancelAnimationFrame 的封装函数
 - 兼容了浏览器的不同版本
@@ -63,14 +63,14 @@
 
 ```typescript
 /**
- * @func useAnimationFrame
+ * @func useRaf
  * @desc 📝 打印
  * @param { Function } fn 待执行的函数
  * @param { number } timeout 超时时间(单位:毫秒)
  * @param { Boolean } autoStop 执行一次后停止动画
  * @return { () => void } 停止函数
  * @example
-  import { useAnimationFrame } from 'lazy-js-utils'
+  import { useRaf } from 'lazy-js-utils'
 
   const count = ref(0)
   // 封装前的场景
@@ -92,7 +92,7 @@
     requestAnimationFrame(fn)
   }
   // 封装后的场景 更加简短方便
-  const stop = useAnimationFrame(() => {
+  const stop = useRaf(() => {
     count.value++
     if (count.value > 10) {
       stop()
