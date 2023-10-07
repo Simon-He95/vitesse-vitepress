@@ -147,3 +147,59 @@
   removeRoundSpace(data) // [[1,1,1],[1,1,1]]
  */
 ```
+
+## Line
+
+🧿 快速画线
+
+```typescript
+/**
+ * @Class Line
+ * @param { ctx: CanvasRenderingContext2D
+  color: string
+  isFill: boolean } 
+ * @example 
+  import { Line } from './lazy-js-utils'
+
+  const line = new Line(ctx,'red')
+  line.draw([0,0],[100,100])
+ */
+```
+
+## Point
+
+🧿 快速画点
+
+```typescript
+/**
+ * @Class Point
+ * @param { r: number
+  ctx: CanvasRenderingContext2D
+  color: string
+  }
+ * @example 
+  import { Point } from './lazy-js-utils'
+
+  const point = new Point(ctx,'red')
+  point.draw(0,0,'red',10)
+ */
+```
+
+## Square
+
+🧿 快速画矩形
+
+```typescript
+/**
+ * @Class Square
+ * @param { r: number
+  ctx: CanvasRenderingContext2D
+  color: string
+  }
+ * @example 
+  import { Point } from './lazy-js-utils'
+
+  const square = new Square(ctx,'red')
+  square.draw(0,0,'red',10)
+ */
+```
