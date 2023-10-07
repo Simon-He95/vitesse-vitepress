@@ -1,5 +1,66 @@
 # Array
 
+## chunk
+
+🧿 数组分割
+
+```typescript
+/**
+ * @func chunk
+ * @param { any[] } arr 数组
+ * @param { number } size 以多少为基准分割
+ * @returns  分割后的数组
+ * @example
+export function chunk(arr: any[], size = 1) {
+  if (size < 1)
+    return []
+  const result = []
+  for (let i = 0; i < arr.length; i += size) result.push(arr.slice(i, i + size))
+
+  return result
+}
+
+console.log(chunk([1, 3, 5, 7], 2)); // [ [1, 3], [5, 7]]
+ */
+```
+
+## countBy
+
+🧿 统计数组中某一项的结果
+
+```typescript
+/**
+ * @func countBy
+ * @param { any[] } array 数组
+ * @param { Function } iterator 迭代数组函数
+ * @returns 结果的个数
+ * @example
+export function countBy(
+  array: any[],
+  iterator: (item: Record<string, any>) => any,
+) {
+  return array.reduce((result, item) => {
+    const val = iterator(item)
+    if (!result[val])
+      result[val] = 1
+    else result[val]++
+    return result
+  }, {} as Record<string, number>)
+}
+
+// const array = [
+//   { 'user': '1', 'active': true },
+//   { 'user': '2', 'active': false },
+//   { 'user': '3', 'active': true },
+//   { 'user': '4', 'active': true },
+//   { 'user': '5', 'active': true },
+// ]
+// console.log(countBy(array, (item) => {
+//   return item.active
+// })) // { true: 4, false: 1 }
+ */
+```
+
 ## diff
 
 🧿 对比 2 个数组中的相同或不同的部分
@@ -28,6 +89,56 @@
  */
 ```
 
+## filterEmpty
+
+🧿 过滤空值的数组
+
+```typescript
+/**
+ /**
+ * @func filterEmpty
+ * @param { any[] } array 数组
+ * @returns 过滤空值后的数组
+ * @example
+export function filterEmpty(array: any[]) {
+  return array.filter(Boolean)
+}
+ */
+```
+
+## flatten
+
+🧿 数组扁平化
+
+```typescript
+/**
+ * @func flatten
+ * @param { Record<string, any> | Record<string, any>[] } o 对象或者数组
+ * @param { string }flattenProps 展开的属性默认为children
+ * @param { boolean }onlyLastNode  只保留最后一层级的数据
+ * @returns 一层的数组
+ * @example
+    const obj = {
+      a: '1',
+      children: [
+        {
+          b: '12',
+          children: {
+            e: '44'
+          }
+        },
+        {
+          c: '33', children: [
+            { dd: '5' }
+          ]
+        }
+      ]
+    }
+
+    console.log(flatten(obj))
+ */
+```
+
 ## forEach
 
 🧿 一个可中断的 forEach
@@ -48,6 +159,52 @@
       return 'break'
     }
   }) // 'break'
+ */
+```
+
+## forEachBack
+
+🧿 逆序遍历数组
+
+```typescript
+/**
+ * @func forEach 逆序遍历
+ * @param { T[] } arr 数组
+ * @param { (item: T, i: number) => void } callback 回调
+ * @returns
+ * @example
+ *
+ * import { forEachBack } from 'lazy-js-utils'
+ *
+ * const arr = [1, 2, 3, 4, 5]
+ *
+ * forEachBack(arr, (item, i) => {
+ *   console.log(item)
+ * })
+ */
+```
+
+## mapBack
+
+🧿 逆序遍历数组
+
+```typescript
+/**
+ * @func mapBack 逆序遍历
+ * @param { T[] } arr 数组
+ * @param { (item: T, i: number) => void } callback 回调
+ * @param { boolean } [reverse] 结果是否颠倒顺序
+ * @returns
+ * @example
+ *
+ * import { mapBack } from 'lazy-js-utils'
+ *
+ * const arr = [1, 2, 3, 4, 5]
+ *
+ * mapBack(arr, (item, i) => {
+ *   console.log(item)
+ *   return item
+ * })
  */
 ```
 
@@ -130,6 +287,24 @@
   }]
   const qf = quickFind(arr, 'id')
   qf.find(1) // { id: 1, name: 'zhangsan' }
+ */
+```
+
+## removeItem
+
+🧿o(1)的根据 key 查找数组中的项
+
+```typescript
+/**
+ * @func removeItem
+ * @param { Array<unknown> } arr 数组
+ * @param { unknown } item 数组中的一项
+ * @returns 删除该项的数组
+ * @example
+  import { removeItem } from 'lazy-js-utils'
+
+  const arr = [1,2,3]
+  removeItem(arr, 2)
  */
 ```
 
@@ -225,5 +400,23 @@
       }
     ]
     const result = uniqueArray(array) // [{ name: 'simon', age: '18' }, { name: 'simon', age: '18' }]
+*/
+```
+
+## toggleItem
+
+🧿 数组中如果有则删除，如果没有则增加
+
+```typescript
+/**
+* @func toggleItem
+ * @param { Array<unknown> } arr 数组
+ * @param { unknown } item
+* @example 
+  import { toggleItem } from 'lazy-js-utils'
+
+   const array = [1，2，3]
+    toggleItem(4) // [1,2,3,4]
+    toggleItem(4) // [1,2,3]
 */
 ```
