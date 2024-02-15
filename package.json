@@ -1,7 +1,7 @@
 {
   "name": "vitesse",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.26.1",
+  "packageManager": "pnpm@7.33.7",
   "description": "vitepress",
   "author": "Simon He",
   "license": "MIT",
